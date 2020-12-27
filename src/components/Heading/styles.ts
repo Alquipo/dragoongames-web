@@ -17,13 +17,13 @@ const wrapperModifiers = {
       bottom: -1rem;
       content: '';
       width: 5rem;
-      border: 0.4rem solid ${theme.colors.primary};
+      border-bottom: 0.5rem solid ${theme.colors.primary};
     }
   `
 }
 export const Wrapper = styled.h2<HeadingProps>`
   ${({ theme, color, lineLeft, lineBottom }) => css`
-    color: ${theme.colors[color!]}
+    color: ${theme.colors[color!]};
     font-size: ${theme.font.sizes.xlarge};
 
     ${media.greaterThan('medium')`
