@@ -49,10 +49,10 @@ const GlobalStyles = createGlobalStyle`
 
 
 
-  a {
+  /* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 `
 export default GlobalStyles
