@@ -10,6 +10,10 @@ export default {
     subTitle: '<p>Play the new <strong>CrashLands</strong> season',
     buttonLabel: 'Buy now',
     buttonLink: '/games/defy-death'
+  },
+
+  parameters: {
+    layout: 'fullscreen'
   }
 } as Meta
 
