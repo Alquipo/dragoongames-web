@@ -7,6 +7,7 @@ export default {
   args: {
     title: "Read Dead it's back",
     subtitle: "come see John's new adventures",
+    backgroundImage: '/img/red-dead-img.jpg',
     buttonLabel: 'buy now',
     buttonLink: '/rdr'
   }
