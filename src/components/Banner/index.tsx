@@ -5,7 +5,7 @@ import * as S from './styles'
 export type BannerProps = {
   img: string
   title: string
-  subTitle: string
+  subtitle: string
   buttonLabel: string
   buttonLink: string
   ribbon?: React.ReactNode
@@ -16,7 +16,7 @@ const Banner = ({
   buttonLabel,
   buttonLink,
   img,
-  subTitle,
+  subtitle,
   title,
   ribbon,
   ribbonColor = 'primary',
@@ -33,7 +33,7 @@ const Banner = ({
 
     <S.Caption>
       <S.Title>{title}</S.Title>
-      <S.SubTitle dangerouslySetInnerHTML={{ __html: subTitle }} />
+      <S.Subtitle dangerouslySetInnerHTML={{ __html: subtitle }} />
       <Button as="a" size="large" href={buttonLink}>
         {buttonLabel}
       </Button>
