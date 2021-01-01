@@ -1,4 +1,4 @@
-import darken from 'polished/lib/color/darken'
+import { darken } from 'polished'
 import styled, { css, DefaultTheme } from 'styled-components'
 import { RibbonColors, RibbonProps } from '.'
 
