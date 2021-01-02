@@ -67,12 +67,5 @@ const GlobalStyles: GlobalStyleComponent<
     }
   `}
 
-
-
-  /* a {
-  color: inherit;
-  text-decoration: none;
-} */
-
 `
 export default GlobalStyles
