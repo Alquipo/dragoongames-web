@@ -29,7 +29,7 @@ describe('<TextContent />', () => {
     ).not.toBeInTheDocument()
   })
 
-  it('should render the title and content', () => {
+  it('should render the white color', () => {
     renderWithTheme(<TextContent {...props} />)
 
     const wrapper = screen.getByRole('heading', { name: /description/i })
