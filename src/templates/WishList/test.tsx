@@ -1,14 +1,31 @@
-// import { screen } from '@testing-library/react'
+import 'match-media-mock'
+import { screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helpers'
 
-import WishList from '.'
+import Wishlist from '.'
 
-describe('<WishList />', () => {
-  it('should render the heading', () => {
-    renderWithTheme(<WishList />)
+import gamesMock from 'components/GameCardSlider/mock'
+import highlightMock from 'components/Highlight/mock'
 
-    // expect(screen.getByRole('heading', { name: /WishList/i })).toBeInTheDocument()
+const props = {
+  recommendedHighlight: highlightMock,
+  recommendedGames: gamesMock
+}
 
-    // expect(container.firstChild).toMatchSnapshot()
+jest.mock('components/Showcase', () => ({
+  __esModule: true,
+  default: function Mock() {
+    return <div data-testid="Mock Showcase" />
+  }
+}))
+
+describe('<Wishlist />', () => {
+  it('should render correctly', () => {
+    renderWithTheme(<Wishlist {...props} />)
+
+    expect(
+      screen.getByRole('heading', { name: /wishlist/i })
+    ).toBeInTheDocument()
+    expect(screen.getByTestId('Mock Showcase')).toBeInTheDocument()
   })
 })
