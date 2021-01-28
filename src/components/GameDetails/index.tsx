@@ -17,7 +17,7 @@ export type GameDetailsProps = {
   genres?: string[]
 }
 
-const GameDetail = ({
+const GameDetails = ({
   platforms,
   developer,
   releaseDate,
@@ -87,4 +87,4 @@ const GameDetail = ({
   )
 }
 
-export default GameDetail
+export default GameDetails

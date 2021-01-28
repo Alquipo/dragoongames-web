@@ -5,7 +5,7 @@ import Gallery, { GalleryImageProps } from 'components/Gallery'
 import TextContent from 'components/TextContent'
 
 import * as S from './styles'
-import GameDetail, { GameDetailsProps } from 'components/GameDetail'
+import GameDetail, { GameDetailsProps } from 'components/GameDetails'
 import { GameCardProps } from 'components/GameCard'
 import { HighlightProps } from 'components/Highlight'
 import Showcase from 'components/Showcase'
