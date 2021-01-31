@@ -42,6 +42,13 @@ const GameCard = ({
         {ribbon}
       </Ribbon>
     )}
+
+    {price === 0 && (
+      <Ribbon color="primary" size="small">
+        FREE
+      </Ribbon>
+    )}
+
     <Link href={`game/${slug}`} passHref>
       <S.ImageBox>
         <img src={img} alt={title} />
@@ -65,7 +72,13 @@ const GameCard = ({
         {!!promotionalPrice && (
           <S.Price isPromotional>{formatPrice(price)}</S.Price>
         )}
-        <S.Price>{formatPrice(promotionalPrice || price)}</S.Price>
+
+        {price === 0 ? (
+          <S.Price>FREE</S.Price>
+        ) : (
+          <S.Price>{formatPrice(promotionalPrice || price)}</S.Price>
+        )}
+
         <Button icon={<AddShoppingCart />} size="small" />
       </S.BuyBox>
     </S.Content>
