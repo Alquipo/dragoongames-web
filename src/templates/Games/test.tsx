@@ -35,26 +35,12 @@ jest.mock('next/link', () => ({
 }))
 
 describe('<Games />', () => {
-  it('should render loading when starting the template', () => {
-    renderWithTheme(
-      <MockedProvider mocks={[]} addTypename={false}>
-        <Games filterItems={filterItemsMock} />
-      </MockedProvider>
-    )
-
-    expect(screen.getByText(/loading.../i)).toBeInTheDocument()
-  })
-
   it('should render sections', async () => {
     renderWithTheme(
       <MockedProvider mocks={[gamesMock]} addTypename={false}>
         <Games filterItems={filterItemsMock} />
       </MockedProvider>
     )
-
-    // it starts without data
-    // shows loading
-    expect(screen.getByText(/loading.../i)).toBeInTheDocument()
 
     // we wait until we have data to get the elements
     // get => tem certeza do elemento
