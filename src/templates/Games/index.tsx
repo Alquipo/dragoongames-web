@@ -32,7 +32,7 @@ const GamesTemplate = ({ filterItems }: GamesTemplateProps) => {
       <S.Main>
         <ExploreSidebar items={filterItems} onFilter={handleFilter} />
         {loading ? (
-          <p>loading..</p>
+          <p>loading...</p>
         ) : (
           <section>
             <Grid>
