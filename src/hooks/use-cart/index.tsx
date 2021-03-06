@@ -1,7 +1,8 @@
 import { useQueryGames } from 'graphql/queries/games'
+import { StringifyOptions } from 'node:querystring'
 import { useContext, createContext, useState, useEffect } from 'react'
 import formatPrice from 'utils/format-price'
-import { getStorageItem } from 'utils/localStorage'
+import { getStorageItem, setStorageItem } from 'utils/localStorage'
 import { cartMapper } from 'utils/mappers'
 
 const CART_KEY = 'cartItems'
@@ -15,10 +16,24 @@ type CartItem = {
 
 export type CartContextData = {
   items: CartItem[]
+  quantity: number
+  total: string
+  loading: boolean
+  isInCart: (id: string) => boolean
+  addToCart: (id: string) => void
+  removeFromCart: (id: string) => void
+  clearCart: () => void
 }
 
 export const CartContextDefaultValues = {
-  items: []
+  items: [],
+  quantity: 0,
+  total: '$0.00',
+  loading: false,
+  isInCart: () => false,
+  addToCart: () => null,
+  removeFromCart: () => null,
+  clearCart: () => null
 }
 
 export const CartContext = createContext<CartContextData>(
@@ -40,7 +55,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
     }
   }, [])
 
-  const { data } = useQueryGames({
+  const { data, loading } = useQueryGames({
     skip: !cartItems?.length,
     variables: {
       where: {
@@ -49,10 +64,41 @@ const CartProvider = ({ children }: CartProviderProps) => {
     }
   })
 
+  const total = data?.games.reduce((acc, game) => {
+    return acc + game.price
+  }, 0)
+
+  const isInCart = (id: string) => (id ? cartItems.includes(id) : false)
+
+  const saveCart = (cartItems: string[]) => {
+    setCartItems(cartItems)
+    setStorageItem(CART_KEY, cartItems)
+  }
+
+  const addToCart = (id: string) => {
+    saveCart([...cartItems, id])
+  }
+
+  const removeFromCart = (id: string) => {
+    const newCartItems = cartItems.filter((itemId: string) => itemId !== id)
+    saveCart(newCartItems)
+  }
+
+  const clearCart = () => {
+    saveCart([])
+  }
+
   return (
     <CartContext.Provider
       value={{
-        items: cartMapper(data?.games)
+        items: cartMapper(data?.games),
+        quantity: cartItems.length,
+        total: formatPrice(total || 0),
+        loading,
+        isInCart,
+        addToCart,
+        removeFromCart,
+        clearCart
       }}
     >
       {children}
