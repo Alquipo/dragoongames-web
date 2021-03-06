@@ -35,7 +35,7 @@ export const Wrapper = styled.div<WrapperProps>`
 `
 
 export const GamesList = styled.div`
-  max-width: 40rem;
+  max-height: 40rem;
   overflow-y: auto;
 `
 

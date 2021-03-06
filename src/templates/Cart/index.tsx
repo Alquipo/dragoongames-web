@@ -4,6 +4,7 @@ import { Divider } from 'components/Divider'
 import { GameCardProps } from 'components/GameCard'
 import { HighlightProps } from 'components/Highlight'
 import PaymentOptions, { PaymentOptionsProps } from 'components/PaymentOptions'
+import { Info } from '@styled-icons/material-outlined/Info'
 import Heading from 'components/Heading'
 import Showcase from 'components/Showcase'
 import Base from 'templates/Base'
@@ -21,7 +22,6 @@ const Cart = ({
   recommendedGames,
   recommendedTitle,
   recommendedHighlight,
-
   cards
 }: CartProps) => {
   const handlePayment = () => ({})
@@ -37,6 +37,15 @@ const Cart = ({
           <CartList />
           <PaymentOptions cards={cards} handlePayment={handlePayment} />
         </S.Content>
+
+        <S.Text>
+          <Info size={18} /> Your purchase is protected by a secure connection
+          from the WON platform. By purchasing from our store you agree and
+          agree to our <a href="#">terms of use.</a> After making the purchase
+          you are entitled to a refund within a maximum of 30 days, without any
+          additional cost, as long as the download of the purchased game has not
+          occurred after your purchase.
+        </S.Text>
 
         <Divider />
       </Container>
