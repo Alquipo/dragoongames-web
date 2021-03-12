@@ -2,7 +2,6 @@ import { NextApiRequest, NextApiResponse } from 'next'
 import NextAuth from 'next-auth'
 import Providers from 'next-auth/providers'
 import { GenericObject } from 'next-auth/_utils'
-import { URLSearchParams } from 'node:url'
 
 const options = {
   pages: {
