@@ -15,12 +15,19 @@ const props: GameTemplateProps = {
   gallery: galleryMock,
   description: `<h1>Custom HTML</h1>`,
   details: gameDetailsMock as GameDetailsProps,
-  upcomingTitle: 'Upcoming',
+  upcomingTitle: 'Upcoming games',
   upcomingGames: gamesMock,
   upcomingHighlight: highlightMock,
-  recommendedGames: gamesMock,
-  recommendedTitle: 'You may like these games'
+  recommendedTitle: 'You may like these games',
+  recommendedGames: gamesMock
 }
+
+jest.mock('templates/Base', () => ({
+  __esModule: true,
+  default: function Mock({ children }: { children: React.ReactNode }) {
+    return <div data-testid="Mock Base">{children}</div>
+  }
+}))
 
 jest.mock('components/Menu', () => ({
   __esModule: true,
