@@ -27,6 +27,7 @@
     "@styled-icons/material-outlined": "^10.26.0",
     "@styled-icons/remix-fill": "^10.18.0",
     "graphql": "^15.5.0",
+    "joi": "^17.4.0",
     "lodash.xor": "^4.5.0",
     "next": "10.0.8",
     "next-auth": "^3.11.2",
