@@ -1544,7 +1544,7 @@ type Mutation {
   updateUser(input: updateUserInput): updateUserPayload
   """Delete an existing user"""
   deleteUser(input: deleteUserInput): deleteUserPayload
-  upload(refId: ID, ref: String, field: String, source: String, file: Upload!): UploadFile!
+  upload(refId: ID, ref: String, field: String, source: String, info: FileInfoInput, file: Upload!): UploadFile!
   multipleUpload(refId: ID, ref: String, field: String, source: String, files: [Upload]!): [UploadFile]!
   updateFileInfo(id: ID!, info: FileInfoInput!): UploadFile!
   login(input: UsersPermissionsLoginInput!): UsersPermissionsLoginPayload!
@@ -1571,8 +1571,3 @@ scalar Long
 
 """The `Upload` scalar type represents a file upload."""
 scalar Upload
-
-enum CacheControlScope {
-  PUBLIC
-  PRIVATE
-}
