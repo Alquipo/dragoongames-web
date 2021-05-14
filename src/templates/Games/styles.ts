@@ -38,6 +38,11 @@ export const ShowMore = styled.div`
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: 10rem; */
   `}
 `
 
@@ -48,6 +53,7 @@ export const ArrowDowns = styled.div`
     text-align: center;
     justify-content: center;
     display: flex;
+
     > svg {
       color: ${theme.colors.primary};
       position: absolute;
@@ -65,4 +71,7 @@ export const ArrowDowns = styled.div`
       }
     }
   `}
+`
+export const ShowMoreLoading = styled.img`
+  width: 4rem;
 `
