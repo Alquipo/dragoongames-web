@@ -1,12 +1,13 @@
+import { useState } from 'react'
 import { signIn } from 'next-auth/client'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
 
 import { Lock, ErrorOutline } from '@styled-icons/material-outlined'
 
 import { FormWrapper, FormLoading, FormError } from 'components/Form'
 import Button from 'components/Button'
 import TextField from 'components/TextField'
+
 import { FieldErrors, resetValidate } from 'utils/validations'
 
 const FormResetPassword = () => {
@@ -24,7 +25,6 @@ const FormResetPassword = () => {
     event.preventDefault()
     setLoading(true)
 
-    //validar os errors
     const errors = resetValidate(values)
 
     if (Object.keys(errors).length) {
@@ -63,6 +63,7 @@ const FormResetPassword = () => {
       })
     }
   }
+
   return (
     <FormWrapper>
       {!!formError && (
