@@ -70,11 +70,11 @@ exports[`<Banner /> should render Banner correctly 1`] = `
 }
 
 @media (max-width:1170px) {
-  .c0 .sc-gsTCUz {
+  .c0 .sc-gtsrHT {
     right: 0;
   }
 
-  .c0 .sc-gsTCUz::before {
+  .c0 .sc-gtsrHT::before {
     display: none;
   }
 }
@@ -151,4 +151,4 @@ exports[`<Banner /> should render Banner correctly 1`] = `
     </a>
   </div>
 </main>
-`
+`;

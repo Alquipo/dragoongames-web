@@ -1,10 +1,11 @@
+import { ReactElement } from 'react'
 import { render, RenderOptions } from '@testing-library/react'
 import {
   CartContext,
   CartContextData,
   CartContextDefaultValues
 } from 'hooks/use-cart'
-import { ReactElement } from 'react'
+
 import { ThemeProvider } from 'styled-components'
 import theme from 'styles/theme'
 
