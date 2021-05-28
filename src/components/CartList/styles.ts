@@ -20,9 +20,7 @@ export const Wrapper = styled.div<WrapperProps>`
       ${EmptyStyles.Wrapper} {
         padding-bottom: ${theme.spacings.medium};
       }
-      ${EmptyStyles.Image} {
-        max-width: 20rem;
-      }
+
       ${EmptyStyles.Title} {
         font-size: ${theme.font.sizes.large};
       }

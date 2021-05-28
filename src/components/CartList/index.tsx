@@ -1,7 +1,8 @@
+import Link from 'next/link'
+
 import Button from 'components/Button'
 import Empty from 'components/Empty'
 import GameItem from 'components/GameItem'
-import Link from 'next/link'
 
 import * as S from './styles'
 import { useCart } from 'hooks/use-cart'

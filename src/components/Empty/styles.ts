@@ -7,10 +7,6 @@ export const Wrapper = styled.main`
   text-align: center;
 `
 
-export const Image = styled.img`
-  max-width: 100%;
-`
-
 export const Title = styled.h2`
   ${({ theme }) => css`
     color: ${theme.colors.primary};
