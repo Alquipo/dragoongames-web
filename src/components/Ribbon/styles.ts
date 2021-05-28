@@ -48,6 +48,8 @@ export const Wrapper = styled.div<RibbonProps>`
     font-weight: ${theme.font.bold};
     color: ${theme.colors.white};
 
+    z-index: ${theme.layers.base};
+
     &::before {
       content: '';
       position: absolute;
