@@ -18,6 +18,7 @@ import {
   QueryUpcoming,
   QueryUpcomingVariables
 } from 'graphql/generated/QueryUpcoming'
+import { getImageUrl } from 'utils/getImageUrl'
 
 const apolloClient = initializeApollo()
 
@@ -61,11 +62,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const game = data.games[0]
 
   //get recommended games
-  const {
-    data: recommendedSection
-  } = await apolloClient.query<QueryRecommended>({
-    query: QUERY_RECOMMENDED
-  })
+  const { data: recommendedSection } =
+    await apolloClient.query<QueryRecommended>({
+      query: QUERY_RECOMMENDED
+    })
 
   //get upcoming games and highlight
   const TODAY = new Date().toISOString().slice(0, 10) //2021/02/01
@@ -77,7 +77,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     revalidate: 60 * 60,
     props: {
-      cover: `http://localhost:1337${game.cover?.src}`,
+      cover: `${getImageUrl(game.cover?.src)}`,
       gameInfo: {
         id: game.id,
         title: game.name,
@@ -85,7 +85,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         description: game.short_description
       },
       gallery: game.gallery.map((image) => ({
-        src: `http://localhost:1337${image.src}`,
+        src: `${getImageUrl(image.src)}`,
         label: image.label
       })),
       description: game.description,
