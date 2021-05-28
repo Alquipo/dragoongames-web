@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Base from 'templates/Base'
 
@@ -14,6 +15,7 @@ import Showcase from 'components/Showcase'
 import * as S from './styles'
 
 export type GameTemplateProps = {
+  slug?: string
   cover: string
   gameInfo: GameInfoProps
   gallery?: GalleryImageProps[]
@@ -26,6 +28,7 @@ export type GameTemplateProps = {
   recommendedTitle: string
 }
 const Game = ({
+  slug,
   cover,
   gameInfo,
   gallery,
@@ -38,6 +41,23 @@ const Game = ({
   upcomingHighlight
 }: GameTemplateProps) => (
   <Base>
+    <NextSeo
+      title={`${gameInfo.title} - Won Games`}
+      description={gameInfo.description}
+      canonical={`https://wongames.alquipo.dev/game/${slug}`}
+      openGraph={{
+        url: `https://wongames.alquipo.dev/game/${slug}`,
+        title: `${gameInfo.title} - Won Games`,
+        description: gameInfo.description,
+        images: [
+          {
+            url: cover,
+            alt: `${gameInfo.title}`
+          }
+        ]
+      }}
+    />
+
     <S.Cover>
       <Image src={cover} alt={gameInfo.title} layout="fill" />
     </S.Cover>
