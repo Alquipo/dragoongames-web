@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Session } from 'next-auth'
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
@@ -116,7 +117,7 @@ const PaymentForm = ({ session }: PaymentFormProps) => {
           </Heading>
 
           {freeGames ? (
-            <S.FreeGames>Only free games, click buy an enjoy!</S.FreeGames>
+            <S.FreeGames>Only free games, click buy and enjoy!</S.FreeGames>
           ) : (
             <CardElement
               options={{
@@ -138,9 +139,11 @@ const PaymentForm = ({ session }: PaymentFormProps) => {
           )}
         </S.Body>
         <S.Footer>
-          <Button as="a" fullWidth minimal>
-            Continue shopping
-          </Button>
+          <Link href="/" passHref>
+            <Button as="a" fullWidth minimal>
+              Continue shopping
+            </Button>
+          </Link>
           <Button
             fullWidth
             icon={loading ? <FormLoading /> : <ShoppingCart />}
