@@ -48,3 +48,11 @@ Cypress.Commands.add('shouldRenderBanner', () => {
 
   })
 })
+
+
+Cypress.Commands.add('shouldRenderShowcase', ({ name, highlight = false }) => {
+  cy.get(`[data-cy="${name}"]`).within(() => {
+    cy.findByRole('heading', { name }).should('exist')
+  })
+
+})

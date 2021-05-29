@@ -2,6 +2,10 @@
 
 ///<reference types="cypress" />
 
+type ShowcaseAttributes = {
+  name: string
+  highlight?: boolean
+}
 declare namespace Cypress {
   interface Chainable {
     /**
@@ -11,9 +15,15 @@ declare namespace Cypress {
     google(): Chainable<Window>
 
     /**
-         * Custom command to check banner in page
-         * @example cy.shouldRenderBanner()
-         */
+     * Custom command to check banner in page
+     * @example cy.shouldRenderBanner()
+     */
     shouldRenderBanner(): Chainable<Window>
+
+    /**
+     * Custom command to check showcase in page
+     * @example cy.shouldRenderShowcase()
+     */
+    shouldRenderShowcase(attrs: ShowcaseAttributes): Chainable<Window>
   }
 }
