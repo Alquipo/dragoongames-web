@@ -44,7 +44,6 @@ const Home = ({
         <BannerSlider items={banners} />
       </S.SectionBanner>
     </Container>
-
     <S.SectionNews>
       <Showcase title={newGamesTitle} games={newGames} color="black" />
     </S.SectionNews>
