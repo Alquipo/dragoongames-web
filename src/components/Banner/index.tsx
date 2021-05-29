@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Button from 'components/Button'
 import Ribbon, { RibbonColors, RibbonSizes } from 'components/Ribbon'
@@ -38,9 +39,12 @@ const Banner = ({
     <S.Caption>
       <S.Title>{title}</S.Title>
       <S.Subtitle dangerouslySetInnerHTML={{ __html: subtitle }} />
-      <Button as="a" size="large" href={buttonLink}>
-        {buttonLabel}
-      </Button>
+
+      <Link href={buttonLink} passHref>
+        <Button as="a" size="large">
+          {buttonLabel}
+        </Button>
+      </Link>
     </S.Caption>
   </S.Wrapper>
 )
