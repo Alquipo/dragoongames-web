@@ -10,7 +10,7 @@ services:
       DATABASE_USERNAME: wonGames
       DATABASE_PASSWORD: wonGames123
       DATABASE_NAME: wonGames
-      STRIPE_KEY: 'sk_test_51IaUAPAsKoJ0UNhXIEQEf2quPb7yBhZtEheoYjnMT0QzxJGo1xUxCB1J6maxIiMVzkxr77AifvSm3WKL6DqTyBO700yARfUQd1'
+      STRIPE_KEY: 'sk_test_51IvljPGJQ5V6PhsJ1Pm6K9EjSW6ZpEF2pIsux2znob08ekCNElJ78mZtr2k93JfrvDr6criIz5zO3QZVLhTVsckO00Ou67uLnF'
     ports:
       - '1337:1337'
     depends_on:
