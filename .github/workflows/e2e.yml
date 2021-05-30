@@ -1,5 +1,10 @@
 name: End to End
-on: [pull_request]
+# on: [pull_request]
+
+on:
+  push:
+    branches:
+      - 'main'
 
 jobs:
   end-to-end:
