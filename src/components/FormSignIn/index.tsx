@@ -23,6 +23,7 @@ const FormSignIn = () => {
   const handleInput = (field: string, value: string) => {
     setValues((s) => ({ ...s, [field]: value }))
   }
+
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
     setLoading(true)
@@ -50,7 +51,7 @@ const FormSignIn = () => {
 
     setLoading(false)
     //joagar o erro
-    setFormError('Username or Password is invalid')
+    setFormError('username or password is invalid')
   }
   return (
     <FormWrapper>

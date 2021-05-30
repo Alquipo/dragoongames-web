@@ -41,11 +41,11 @@ exports[`<Footer /> should render 4 column topics 1`] = `
 .c3 a,
 .c3 span {
   display: block;
-  color: #8F8F8F;
+  color: #5c5c5c;
   -webkit-text-decoration: none;
   text-decoration: none;
   margin-bottom: 0.8rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .c3 a:hover {
@@ -160,6 +160,7 @@ exports[`<Footer /> should render 4 column topics 1`] = `
     class="c2"
   >
     <div
+      aria-label="contact"
       class="c3"
     >
       <h2
@@ -180,6 +181,7 @@ exports[`<Footer /> should render 4 column topics 1`] = `
       </a>
     </div>
     <div
+      aria-labelledby="social-media"
       class="c3"
     >
       <h2
@@ -189,7 +191,7 @@ exports[`<Footer /> should render 4 column topics 1`] = `
         Follow us
       </h2>
       <nav
-        aria-labelledby="social media"
+        id="social-media"
       >
         <a
           href="https://www.instagram.com/won-games"
@@ -222,6 +224,7 @@ exports[`<Footer /> should render 4 column topics 1`] = `
       </nav>
     </div>
     <div
+      aria-labelledby="resources"
       class="c3"
     >
       <h2
@@ -231,7 +234,7 @@ exports[`<Footer /> should render 4 column topics 1`] = `
         Links
       </h2>
       <nav
-        aria-labelledby="footer resources"
+        id="resources"
       >
         <a
           href="/"
@@ -251,7 +254,7 @@ exports[`<Footer /> should render 4 column topics 1`] = `
       </nav>
     </div>
     <div
-      aria-labelledby="footer-contact"
+      aria-label="location"
       class="c3"
     >
       <h2
@@ -277,4 +280,4 @@ exports[`<Footer /> should render 4 column topics 1`] = `
     Won Games 2020 © All rights reserved.
   </div>
 </footer>
-`
+`;
