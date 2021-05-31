@@ -17,22 +17,22 @@ export type CartContextData = {
   items: CartItem[]
   quantity: number
   total: string
-  loading: boolean
   isInCart: (id: string) => boolean
   addToCart: (id: string) => void
   removeFromCart: (id: string) => void
   clearCart: () => void
+  loading: boolean
 }
 
 export const CartContextDefaultValues = {
   items: [],
   quantity: 0,
   total: '$0.00',
-  loading: false,
   isInCart: () => false,
   addToCart: () => null,
   removeFromCart: () => null,
-  clearCart: () => null
+  clearCart: () => null,
+  loading: false
 }
 
 export const CartContext = createContext<CartContextData>(
@@ -93,11 +93,11 @@ const CartProvider = ({ children }: CartProviderProps) => {
         items: cartMapper(data?.games),
         quantity: cartItems.length,
         total: formatPrice(total || 0),
-        loading,
         isInCart,
         addToCart,
         removeFromCart,
-        clearCart
+        clearCart,
+        loading
       }}
     >
       {children}

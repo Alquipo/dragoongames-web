@@ -9,8 +9,9 @@ const props = {
   buttonLabel: 'Buy now',
   buttonLink: '/games/defy-death'
 }
+
 describe('<Banner />', () => {
-  it('should render Banner correctly', () => {
+  it('should render correctly', () => {
     const { container } = render(<Banner {...props} />)
 
     expect(

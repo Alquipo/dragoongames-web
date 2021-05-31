@@ -18,6 +18,7 @@ export type UserDropdownProps = {
 
 const UserDropdown = ({ username }: UserDropdownProps) => {
   const { push } = useRouter()
+
   return (
     <Dropdown
       title={
@@ -35,7 +36,6 @@ const UserDropdown = ({ username }: UserDropdownProps) => {
             <span>My profile</span>
           </S.Link>
         </Link>
-
         <Link href="/wishlist" passHref>
           <S.Link title="Wishlist">
             <FavoriteBorder />
@@ -58,4 +58,5 @@ const UserDropdown = ({ username }: UserDropdownProps) => {
     </Dropdown>
   )
 }
+
 export default UserDropdown

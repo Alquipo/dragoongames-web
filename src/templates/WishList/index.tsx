@@ -1,30 +1,29 @@
 import Base from 'templates/Base'
 
-import { useWishlist } from 'hooks/use-wishlist'
-
 import Heading from 'components/Heading'
 import Showcase from 'components/Showcase'
 import GameCard, { GameCardProps } from 'components/GameCard'
-import { HighlightProps } from 'components/Highlight'
+import { Divider } from 'components/Divider'
 import { Container } from 'components/Container'
 import { Grid } from 'components/Grid'
-import { Divider } from 'components/Divider'
+import { HighlightProps } from 'components/Highlight'
 import Empty from 'components/Empty'
+import { useWishlist } from 'hooks/use-wishlist'
 import Loader from 'components/Loader'
 
 import * as S from './styles'
 
-export type WishListTemplateProps = {
-  recommendedTitle?: string
+export type WishlistTemplateProps = {
+  recommendedTitle: string
   recommendedGames: GameCardProps[]
   recommendedHighlight: HighlightProps
 }
 
-const WishList = ({
+const Wishlist = ({
   recommendedTitle,
   recommendedGames,
   recommendedHighlight
-}: WishListTemplateProps) => {
+}: WishlistTemplateProps) => {
   const { items, loading } = useWishlist()
 
   return (
@@ -47,11 +46,10 @@ const WishList = ({
         ) : (
           <Empty
             title="Your wishlist is empty"
-            description="Games added to you wishlist appear here"
+            description="Games added to your wishlist will appear here"
             hasLink
           />
         )}
-
         <Divider />
       </Container>
 
@@ -63,4 +61,5 @@ const WishList = ({
     </Base>
   )
 }
-export default WishList
+
+export default Wishlist

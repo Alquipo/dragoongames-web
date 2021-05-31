@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.menu`
-  ${({ theme }) => css`
+export const Wrapper = styled.menu<MenuFullProps>`
+  ${({ theme, isOpen }) => css`
     display: flex;
     align-items: center;
     padding: ${theme.spacings.small} 0;
     position: relative;
-    z-index: ${theme.layers.menu};
+    z-index: ${isOpen ? theme.layers.menu : `calc(${theme.layers.menu} - 1)`};
   `}
 `
 
@@ -27,12 +27,14 @@ export const IconWrapper = styled.div`
     height: 2.4rem;
   `}
 `
+
 export const MenuGroup = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
     align-items: center;
+    z-index: ${theme.layers.menu} + 1;
 
     > div {
       margin-left: ${theme.spacings.xsmall};
@@ -43,8 +45,8 @@ export const MenuGroup = styled.div`
 export const MenuNav = styled.div`
   ${({ theme }) => css`
     ${media.greaterThan('medium')`
-    margin-left: ${theme.spacings.small}
-  `}
+			margin-left: ${theme.spacings.small};
+		`}
   `}
 `
 
@@ -56,6 +58,7 @@ export const MenuLink = styled.a`
     margin: 0.3rem ${theme.spacings.small} 0;
     text-decoration: none;
     text-align: center;
+
     &:hover {
       &::after {
         content: '';
@@ -65,6 +68,7 @@ export const MenuLink = styled.a`
         background-color: ${theme.colors.primary};
         animation: hoverAnimation 0.2s forwards;
       }
+
       @keyframes hoverAnimation {
         from {
           width: 0;
@@ -84,7 +88,7 @@ type MenuFullProps = {
 }
 
 export const MenuFull = styled.nav<MenuFullProps>`
-  ${({ isOpen, theme }) => css`
+  ${({ theme, isOpen }) => css`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -97,7 +101,6 @@ export const MenuFull = styled.nav<MenuFullProps>`
     right: 0;
     height: 100vh;
     overflow: hidden;
-
     transition: opacity 0.3s ease-in-out;
     opacity: ${isOpen ? 1 : 0};
     pointer-events: ${isOpen ? 'all' : 'none'};
@@ -135,12 +138,14 @@ export const MenuFull = styled.nav<MenuFullProps>`
     }
   `}
 `
+
 export const RegisterBox = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 ${theme.spacings.xlarge} ${theme.spacings.xlarge};
+
     > span {
       display: block;
       margin: ${theme.spacings.xxsmall} 0;
@@ -148,6 +153,7 @@ export const RegisterBox = styled.div`
     }
   `}
 `
+
 export const CreateAccount = styled.a`
   ${({ theme }) => css`
     text-decoration: none;

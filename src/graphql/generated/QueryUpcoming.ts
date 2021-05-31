@@ -52,7 +52,7 @@ export interface QueryUpcoming_showcase_upcomingGames_highlight {
 
 export interface QueryUpcoming_showcase_upcomingGames {
   __typename: "ComponentPageSection";
-  title: string;
+  title: string | null;
   highlight: QueryUpcoming_showcase_upcomingGames_highlight | null;
 }
 

@@ -1,12 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<GameCard /> should render correctly 1`] = `
-.c8 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
 .c7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -36,7 +30,7 @@ exports[`<GameCard /> should render correctly 1`] = `
 }
 
 .c7:focus {
-  outline: 1px dashed;
+  box-shadow: 0 0 0 3px #3CD3C1;
 }
 
 .c7:hover {
@@ -82,7 +76,7 @@ exports[`<GameCard /> should render correctly 1`] = `
 }
 
 .c11:focus {
-  outline: 1px dashed;
+  box-shadow: 0 0 0 3px #3CD3C1;
 }
 
 .c11:hover {
@@ -95,6 +89,12 @@ exports[`<GameCard /> should render correctly 1`] = `
 
 .c11 svg + span {
   margin-left: 0.8rem;
+}
+
+.c8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 .c0 {
@@ -140,9 +140,9 @@ exports[`<GameCard /> should render correctly 1`] = `
 }
 
 .c3 {
+  max-width: calc(100% - 2.5rem);
   -webkit-text-decoration: none;
   text-decoration: none;
-  max-width: calc(100% - 2.5rem);
 }
 
 .c4 {
@@ -241,6 +241,7 @@ exports[`<GameCard /> should render correctly 1`] = `
     >
       <button
         class="c7"
+        style="filter: none;"
       >
         <svg
           aria-hidden="true"

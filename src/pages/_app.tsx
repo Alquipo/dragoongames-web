@@ -15,6 +15,7 @@ import GlobalStyles from 'styles/global'
 import theme from 'styles/theme'
 import { useApollo } from 'utils/apollo'
 import { WishlistProvider } from 'hooks/use-wishlist'
+import { StickyNote } from 'components/StickyNote'
 
 function App({ Component, pageProps }: AppProps) {
   const client = useApollo(pageProps.initialApolloState)
@@ -41,8 +42,15 @@ function App({ Component, pageProps }: AppProps) {
                 color="#F231A5"
                 startPosition={0.3}
                 stopDelayMs={200}
-                height={4}
+                height={5}
               />
+              <StickyNote>
+                <p>
+                  Esse é um site de estudos! Quer fazer um site igual? Aprenda
+                  no curso{' '}
+                  <a href="https://reactavancado.com.br">React Avançado</a>
+                </p>
+              </StickyNote>
               <Component {...pageProps} />
             </WishlistProvider>
           </CartProvider>

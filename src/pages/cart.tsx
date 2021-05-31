@@ -1,13 +1,12 @@
-import { GetServerSidePropsContext } from 'next'
 import { initializeApollo } from 'utils/apollo'
-import { QUERY_RECOMMENDED } from 'graphql/queries/recommended'
-
 import { QueryRecommended } from 'graphql/generated/QueryRecommended'
-import protectedRoutes from 'utils/protectedRoutes'
+import { QUERY_RECOMMENDED } from 'graphql/queries/recommended'
+import { gamesMapper, highlightMapper } from 'utils/mappers'
 
 import Cart, { CartProps } from 'templates/Cart'
 
-import { gamesMapper, highlightMapper } from 'utils/mappers'
+import protectedRoutes from 'utils/protected-routes'
+import { GetServerSidePropsContext } from 'next'
 
 export default function CartPage(props: CartProps) {
   return <Cart {...props} />

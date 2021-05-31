@@ -2,16 +2,16 @@ import { Session } from 'next-auth'
 import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
 
-import CartList, { CartListProps } from 'components/CartList'
 import { Container } from 'components/Container'
 import { Divider } from 'components/Divider'
 import { GameCardProps } from 'components/GameCard'
 import { HighlightProps } from 'components/Highlight'
 import PaymentForm from 'components/PaymentForm'
-import { Info } from '@styled-icons/material-outlined/Info'
+import CartList, { CartListProps } from 'components/CartList'
 import Heading from 'components/Heading'
 import Showcase from 'components/Showcase'
 import Base from 'templates/Base'
+import { Info } from '@styled-icons/material-outlined/Info'
 
 import * as S from './styles'
 
@@ -26,15 +26,15 @@ const stripe = loadStripe(`${process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}`)
 
 const Cart = ({
   session,
-  recommendedGames,
   recommendedTitle,
+  recommendedGames,
   recommendedHighlight
 }: CartProps) => {
   return (
     <Base>
       <Container>
         <Heading lineLeft lineColor="secondary">
-          My Cart
+          My cart
         </Heading>
 
         <S.Content>
@@ -53,7 +53,6 @@ const Cart = ({
           additional cost, as long as the download of the purchased game has not
           occurred after your purchase.
         </S.Text>
-
         <Divider />
       </Container>
 

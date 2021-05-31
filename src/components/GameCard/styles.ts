@@ -23,7 +23,6 @@ export const ImageBox = styled.a`
     #f6f7f8 40%,
     #f6f7f8 100%
   );
-
   background-size: 80rem 14rem;
   animation: placeholderShimmer 1s linear infinite forwards;
 
@@ -31,6 +30,7 @@ export const ImageBox = styled.a`
     0% {
       background-position: -40rem 0;
     }
+
     100% {
       background-position: 40rem 0;
     }
@@ -49,8 +49,8 @@ export const Content = styled.div`
 `
 
 export const Info = styled.a`
-  text-decoration: none;
   max-width: calc(100% - 2.5rem);
+  text-decoration: none;
 `
 
 export const Title = styled.h3`
@@ -77,13 +77,14 @@ export const FavButton = styled.div`
     right: -1rem;
     top: -0.5rem;
     cursor: pointer;
+
     svg {
       width: 2.5rem;
     }
   `}
 `
 
-export const BuyBox = styled.div<PriceProps>`
+export const BuyBox = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
@@ -91,6 +92,7 @@ export const BuyBox = styled.div<PriceProps>`
     margin-top: ${theme.spacings.xxsmall};
   `}
 `
+
 type PriceProps = {
   isPromotional?: boolean
 }
@@ -117,6 +119,7 @@ export const Price = styled.div<PriceProps>`
     font-weight: ${theme.font.bold};
     height: 3rem;
     align-items: center;
+
     ${!isPromotional && priceModifiers.default(theme)};
     ${isPromotional && priceModifiers.promotional(theme)};
   `}

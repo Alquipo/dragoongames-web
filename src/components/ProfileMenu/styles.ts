@@ -22,6 +22,7 @@ const linkModifiers = {
     background: ${theme.colors.white};
     color: ${theme.colors.black};
   `,
+
   active: (theme: DefaultTheme) => css`
     background: ${theme.colors.primary};
     color: ${theme.colors.white};
@@ -59,7 +60,7 @@ export const Link = styled.a<LinkProps>`
       }
     `}
 
-    ${!isActive && linkModifiers.default(theme)}
-    ${isActive && linkModifiers.active(theme)}
+    ${!isActive && linkModifiers.default(theme)};
+    ${isActive && linkModifiers.active(theme)};
   `}
 `

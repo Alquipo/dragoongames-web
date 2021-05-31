@@ -4,8 +4,8 @@ import GameDetails, { GameDetailsProps } from '.'
 
 const props: GameDetailsProps = {
   developer: 'Different Tales',
-  publisher: 'anything',
-  platforms: ['linux', 'mac', 'windows'],
+  publisher: 'Walktrough',
+  platforms: ['windows', 'mac', 'linux'],
   releaseDate: '2020-11-21T23:00:00',
   rating: 'BR0',
   genres: ['Role-playing', 'Narrative']
@@ -16,7 +16,7 @@ describe('<GameDetails />', () => {
     render(<GameDetails {...props} />)
 
     expect(
-      screen.getByRole('heading', { name: /Developer/i })
+      screen.getByRole('heading', { name: /developer/i })
     ).toBeInTheDocument()
 
     expect(
@@ -24,16 +24,16 @@ describe('<GameDetails />', () => {
     ).toBeInTheDocument()
 
     expect(
-      screen.getByRole('heading', { name: /Platform/i })
+      screen.getByRole('heading', { name: /platforms/i })
     ).toBeInTheDocument()
 
     expect(
-      screen.getByRole('heading', { name: /Publisher/i })
+      screen.getByRole('heading', { name: /publisher/i })
     ).toBeInTheDocument()
 
-    expect(screen.getByRole('heading', { name: /Rating/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /rating/i })).toBeInTheDocument()
 
-    expect(screen.getByRole('heading', { name: /Genres/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /genres/i })).toBeInTheDocument()
   })
 
   it('should render platform icons', () => {
@@ -50,7 +50,7 @@ describe('<GameDetails />', () => {
     expect(screen.getByText(/free/i)).toBeInTheDocument()
   })
 
-  it('should render the Developer', () => {
+  it('should render the developer', () => {
     render(<GameDetails {...props} />)
 
     expect(screen.getByText(/Different Tales/i)).toBeInTheDocument()
@@ -59,10 +59,10 @@ describe('<GameDetails />', () => {
   it('should render the publisher', () => {
     render(<GameDetails {...props} />)
 
-    expect(screen.getByText(/anything/i)).toBeInTheDocument()
+    expect(screen.getByText(/walktrough/i)).toBeInTheDocument()
   })
 
-  it('should render 18+ free rating when BR18', () => {
+  it('should render 18+ rating when BR18', () => {
     render(<GameDetails {...props} rating="BR18" />)
 
     expect(screen.getByText(/18\+/i)).toBeInTheDocument()

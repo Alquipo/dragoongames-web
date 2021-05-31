@@ -9,7 +9,8 @@ export type FormProfileProps = {
   username?: string
   email?: string
 }
-const FormProfile = ({ username, email }: FormProfileProps) => (
+
+const FormProfile = ({ email, username }: FormProfileProps) => (
   <>
     <Heading lineBottom color="black" size="small">
       My profile
@@ -38,7 +39,6 @@ const FormProfile = ({ username, email }: FormProfileProps) => (
             Reset Password
           </Button>
         </Link>
-
         <Button size="medium">Save</Button>
       </S.ButtonContainer>
     </S.Form>

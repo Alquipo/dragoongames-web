@@ -26,16 +26,16 @@ export type HomeTemplateProps = {
 
 const Home = ({
   banners,
-  newGames,
   newGamesTitle,
+  newGames,
+  mostPopularGamesTitle,
   mostPopularHighlight,
   mostPopularGames,
-  mostPopularGamesTitle,
-  upcomingGames,
   upcomingGamesTitle,
+  upcomingGames,
   upcomingHighlight,
-  freeGames,
   freeGamesTitle,
+  freeGames,
   freeHighlight
 }: HomeTemplateProps) => (
   <Base>
@@ -44,6 +44,7 @@ const Home = ({
         <BannerSlider items={banners} />
       </S.SectionBanner>
     </Container>
+
     <S.SectionNews>
       <Showcase title={newGamesTitle} games={newGames} color="black" />
     </S.SectionNews>
@@ -62,8 +63,8 @@ const Home = ({
 
     <Showcase
       title={freeGamesTitle}
-      games={freeGames}
       highlight={freeHighlight}
+      games={freeGames}
     />
   </Base>
 )

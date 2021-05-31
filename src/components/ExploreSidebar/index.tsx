@@ -8,8 +8,8 @@ import Button from 'components/Button'
 import Checkbox from 'components/Checkbox'
 import Radio from 'components/Radio'
 
-import { ParsedUrlQueryInput } from 'querystring'
 import * as S from './styles'
+import { ParsedUrlQueryInput } from 'querystring'
 
 export type ItemProps = {
   title: string
@@ -41,7 +41,8 @@ const ExploreSidebar = ({
 
   useEffect(() => {
     onFilter(values)
-    //this method comes from another template that we dont have access
+    // this method comes from another template
+    // that we don't have access
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [values])
 

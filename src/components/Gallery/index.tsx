@@ -1,20 +1,19 @@
 import Image from 'next/image'
 
-import { useEffect, useState, useRef } from 'react'
-
+import { useState, useEffect, useRef } from 'react'
 import { ArrowBackIos as ArrowLeft } from '@styled-icons/material-outlined/ArrowBackIos'
 import { ArrowForwardIos as ArrowRight } from '@styled-icons/material-outlined/ArrowForwardIos'
 import { Close } from '@styled-icons/material-outlined/Close'
+import SlickSlider from 'react-slick'
 
 import Slider, { SliderSettings } from 'components/Slider'
-import SlickSlider from 'react-slick'
 
 import * as S from './styles'
 
 const commonSettings: SliderSettings = {
-  arrows: true,
   infinite: false,
   lazyLoad: 'ondemand',
+  arrows: true,
   nextArrow: <ArrowRight aria-label="next image" />,
   prevArrow: <ArrowLeft aria-label="previous image" />
 }
@@ -68,14 +67,12 @@ const Gallery = ({ items }: GalleryProps) => {
   const slider = useRef<SlickSlider>(null)
   const [isOpen, setIsOpen] = useState(false)
 
-  //lógica para fechar modal com ESC
   useEffect(() => {
     const handleKeyUp = ({ key }: KeyboardEvent) => {
       key === 'Escape' && setIsOpen(false)
     }
 
     window.addEventListener('keyup', handleKeyUp)
-
     return () => window.removeEventListener('keyup', handleKeyUp)
   }, [])
 
@@ -86,8 +83,8 @@ const Gallery = ({ items }: GalleryProps) => {
           <Image
             width={295}
             height={165}
-            key={`thumb-${index}`}
             role="button"
+            key={`thumb-${index}`}
             src={item.src}
             alt={`Thumb - ${item.label}`}
             onClick={() => {

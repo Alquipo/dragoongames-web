@@ -1,5 +1,4 @@
 import { render, screen } from 'utils/test-utils'
-
 import userEvent from '@testing-library/user-event'
 
 import UserDropdown from '.'
@@ -13,16 +12,16 @@ useRouter.mockImplementation(() => ({
 
 describe('<UserDropdown />', () => {
   it('should render the username', () => {
-    render(<UserDropdown username="Alquipo" />)
+    render(<UserDropdown username="Willian" />)
 
-    expect(screen.getByText(/Alquipo/i)).toBeInTheDocument()
+    expect(screen.getByText(/willian/i)).toBeInTheDocument()
   })
 
   it('should render the menu', () => {
-    render(<UserDropdown username="Alquipo" />)
+    render(<UserDropdown username="Willian" />)
 
     // open menu
-    userEvent.click(screen.getByText(/Alquipo/i))
+    userEvent.click(screen.getByText(/willian/i))
 
     expect(
       screen.getByRole('link', { name: /my profile/i })

@@ -1,26 +1,27 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
 import { CartContextData } from 'hooks/use-cart'
+
 import GameCard, { GameCardProps } from '.'
 
 export default {
   title: 'GameCard',
   component: GameCard,
+  parameters: {
+    backgrounds: {
+      default: 'won-dark'
+    }
+  },
   args: {
     slug: 'population-zero',
     title: 'Population Zero',
     developer: 'Rockstar Games',
-    img: '/img/red-dead-img.jpg',
+    img: 'https://source.unsplash.com/user/willianjusten/300x140',
     price: 235,
     promotionalPrice: 215
   },
   argTypes: {
     onFav: { action: 'clicked' },
     ribbon: { type: 'string' }
-  },
-  parameters: {
-    backgrounds: {
-      default: 'won-dark'
-    }
   }
 } as Meta
 

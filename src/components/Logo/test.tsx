@@ -1,9 +1,6 @@
 import { render, screen } from 'utils/test-utils'
 
 import Logo from '.'
-//renderizar o componente `render`
-//selecionar o elemento a ser testado `screen` (queries) - getByLabel
-//expect - assertion- asserção -comparação- analise (espero que renderize a logo branca)
 
 describe('<Logo />', () => {
   it('should render the logo with id passed', () => {
@@ -27,7 +24,7 @@ describe('<Logo />', () => {
   })
 
   it('should render a normal logo when size is default', () => {
-    render(<Logo size="normal" />)
+    render(<Logo />)
     expect(screen.getByLabelText(/Won Games/i).parentElement).toHaveStyle({
       width: '11rem'
     })
@@ -45,7 +42,9 @@ describe('<Logo />', () => {
     expect(screen.getByLabelText(/Won Games/i).parentElement).toHaveStyleRule(
       'width',
       '5.8rem',
-      { media: '(max-width: 768px)' }
+      {
+        media: '(max-width: 768px)'
+      }
     )
   })
 })

@@ -1,16 +1,16 @@
-import Link from 'next/link'
-import { signIn } from 'next-auth/client'
-import { useRouter } from 'next/router'
 import { useState } from 'react'
+import { signIn } from 'next-auth/client'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import { Email, Lock, ErrorOutline } from '@styled-icons/material-outlined'
 
-import { FormWrapper, FormLink, FormLoading, FormError } from 'components/Form'
+import { FormLink, FormWrapper, FormLoading, FormError } from 'components/Form'
 import Button from 'components/Button'
 import TextField from 'components/TextField'
-import { FieldErrors, signInValidate } from 'utils/validations'
 
 import * as S from './styles'
+import { FieldErrors, signInValidate } from 'utils/validations'
 
 const FormSignIn = () => {
   const [formError, setFormError] = useState('')
@@ -28,7 +28,6 @@ const FormSignIn = () => {
     event.preventDefault()
     setLoading(true)
 
-    //validar os errors
     const errors = signInValidate(values)
 
     if (Object.keys(errors).length) {
@@ -39,6 +38,7 @@ const FormSignIn = () => {
 
     setFieldError({})
 
+    // sign in
     const result = await signIn('credentials', {
       ...values,
       redirect: false,
@@ -50,9 +50,11 @@ const FormSignIn = () => {
     }
 
     setLoading(false)
-    //joagar o erro
+
+    // jogar o erro
     setFormError('username or password is invalid')
   }
+
   return (
     <FormWrapper>
       {!!formError && (

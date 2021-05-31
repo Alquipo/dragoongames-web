@@ -1,5 +1,6 @@
 import { Download } from '@styled-icons/boxicons-solid/Download'
 import { useCart } from 'hooks/use-cart'
+
 import * as S from './styles'
 
 export type PaymentInfoProps = {

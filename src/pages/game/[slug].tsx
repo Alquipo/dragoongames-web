@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router'
-
 import { initializeApollo } from 'utils/apollo'
-import { QueryGames, QueryGamesVariables } from 'graphql/generated/QueryGames'
-import { QUERY_GAMES, QUERY_GAME_BY_SLUG } from 'graphql/queries/games'
 
 import Game, { GameTemplateProps } from 'templates/Game'
+
+import { QueryGames, QueryGamesVariables } from 'graphql/generated/QueryGames'
+import { QUERY_GAMES, QUERY_GAME_BY_SLUG } from 'graphql/queries/games'
 import {
   QueryGameBySlug,
   QueryGameBySlugVariables
@@ -13,11 +13,11 @@ import { GetStaticProps } from 'next'
 import { QueryRecommended } from 'graphql/generated/QueryRecommended'
 import { QUERY_RECOMMENDED } from 'graphql/queries/recommended'
 import { gamesMapper, highlightMapper } from 'utils/mappers'
-import { QUERY_UPCOMING } from 'graphql/queries/upcoming'
 import {
   QueryUpcoming,
   QueryUpcomingVariables
 } from 'graphql/generated/QueryUpcoming'
+import { QUERY_UPCOMING } from 'graphql/queries/upcoming'
 import { getImageUrl } from 'utils/getImageUrl'
 
 const apolloClient = initializeApollo()
@@ -25,12 +25,15 @@ const apolloClient = initializeApollo()
 export default function Index(props: GameTemplateProps) {
   const router = useRouter()
 
-  //se a rota nao tiver sido gerada ainda voce pode mostrar um loading ou uma tela de esqueleto
+  // se a rota não tiver sido gerada ainda
+  // você pode mostrar um loading
+  // uma tela de esqueleto
   if (router.isFallback) return null
 
   return <Game {...props} />
 }
 
+// gerar em build time (/game/bla, /bame/foo ...)
 export async function getStaticPaths() {
   const { data } = await apolloClient.query<QueryGames, QueryGamesVariables>({
     query: QUERY_GAMES,
@@ -45,7 +48,7 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  //Get game data
+  // Get game data
   const { data } = await apolloClient.query<
     QueryGameBySlug,
     QueryGameBySlugVariables
@@ -61,21 +64,20 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   const game = data.games[0]
 
-  //get recommended games
-  const { data: recommendedSection } =
-    await apolloClient.query<QueryRecommended>({
-      query: QUERY_RECOMMENDED
-    })
+  // get recommended games
+  const { data: recommended } = await apolloClient.query<QueryRecommended>({
+    query: QUERY_RECOMMENDED
+  })
 
-  //get upcoming games and highlight
-  const TODAY = new Date().toISOString().slice(0, 10) //2021/02/01
+  // get upcoming games and highlight
+  const TODAY = new Date().toISOString().slice(0, 10)
   const { data: upcoming } = await apolloClient.query<
     QueryUpcoming,
     QueryUpcomingVariables
   >({ query: QUERY_UPCOMING, variables: { date: TODAY } })
 
   return {
-    revalidate: 60 * 60,
+    revalidate: 60,
     props: {
       slug: params?.slug,
       cover: `${getImageUrl(game.cover?.src)}`,
@@ -103,10 +105,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       upcomingHighlight: highlightMapper(
         upcoming.showcase?.upcomingGames?.highlight
       ),
-      recommendedTitle: recommendedSection.recommended?.section?.title,
-      recommendedGames: gamesMapper(
-        recommendedSection.recommended?.section?.games
-      )
+      recommendedTitle: recommended.recommended?.section?.title,
+      recommendedGames: gamesMapper(recommended.recommended?.section?.games)
     }
   }
 }

@@ -1,9 +1,9 @@
 import { GetServerSidePropsContext } from 'next'
 
-import FormProfile, { FormProfileProps } from 'components/FormProfile'
 import Profile from 'templates/Profile'
+import FormProfile, { FormProfileProps } from 'components/FormProfile'
 
-import protectedRoutes from 'utils/protectedRoutes'
+import protectedRoutes from 'utils/protected-routes'
 import { initializeApollo } from 'utils/apollo'
 import {
   QueryProfileMe,
@@ -11,7 +11,7 @@ import {
 } from 'graphql/generated/QueryProfileMe'
 import { QUERY_PROFILE_ME } from 'graphql/queries/profile'
 
-export default function ProfileMe(props: FormProfileProps) {
+export default function Me(props: FormProfileProps) {
   return (
     <Profile>
       <FormProfile {...props} />
@@ -38,10 +38,6 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
   })
 
   return {
-    props: {
-      session,
-      username: data.user?.username,
-      email: data.user?.email
-    }
+    props: { session, username: data.user?.username, email: data.user?.email }
   }
 }

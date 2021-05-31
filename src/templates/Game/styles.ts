@@ -18,10 +18,12 @@ export const Cover = styled.div`
   left: 0;
   height: 39.5rem;
   opacity: 0.4;
+
   img {
     object-fit: cover;
     object-position: top center;
   }
+
   ${media.greaterThan('medium')`
     height: 70rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
@@ -37,7 +39,9 @@ const Section = styled(Container).attrs({ as: 'section' })`
     `}
   `}
 `
+
 export const SectionGameInfo = styled(Section)``
+
 export const SectionGallery = styled(Section)`
   display: none;
 
@@ -55,4 +59,5 @@ export const SectionDescription = styled(Section)`
     }
   `}
 `
+
 export const SectionGameDetails = styled(Section)``

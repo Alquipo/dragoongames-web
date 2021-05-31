@@ -7,17 +7,17 @@ describe('<Form />', () => {
     const { container } = render(
       <FormWrapper>
         <FormLink>
-          My nice <a href="#">Link</a>
+          My nice <a href="#">link</a>
         </FormLink>
       </FormWrapper>
     )
 
     expect(container.parentElement).toMatchInlineSnapshot(`
-      .c0 .sc-jSFjdj {
+      .c0 .sc-jRQAMF {
         margin: 0.8rem 0;
       }
 
-      .c0 .sc-gKAaRy {
+      .c0 .sc-gKckTs {
         margin: 3.2rem auto 1.6rem;
       }
 
@@ -53,7 +53,7 @@ describe('<Form />', () => {
               <a
                 href="#"
               >
-                Link
+                link
               </a>
             </div>
           </div>

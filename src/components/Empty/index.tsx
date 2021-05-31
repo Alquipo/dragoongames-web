@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Button from 'components/Button'
-
 import * as S from './styles'
 
 export type EmptyProps = {
@@ -10,6 +9,7 @@ export type EmptyProps = {
   description: string
   hasLink?: boolean
 }
+
 const Empty = ({ title, description, hasLink }: EmptyProps) => (
   <S.Wrapper>
     <Image
@@ -17,7 +17,6 @@ const Empty = ({ title, description, hasLink }: EmptyProps) => (
       alt="A gamer in a couch playing videogame"
       width={380}
       height={285}
-      objectFit="cover"
     />
 
     <S.Title>{title}</S.Title>

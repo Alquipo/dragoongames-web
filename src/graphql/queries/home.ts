@@ -3,6 +3,7 @@ import { BannerFragment } from 'graphql/fragments/banner'
 import { GameFragment } from 'graphql/fragments/game'
 import { HighlightFragment } from 'graphql/fragments/highlight'
 
+// GET_HOME | QUERY_HOME
 export const QUERY_HOME = gql`
   query QueryHome($date: Date!) {
     banners {

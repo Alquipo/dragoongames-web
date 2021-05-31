@@ -19,11 +19,11 @@ const Checkbox = ({
   value,
   ...props
 }: CheckboxProps) => {
-  //controlled component (state)
+  // controlled component (state)
   const [checked, setChecked] = useState(isChecked)
 
   const onChange = () => {
-    const status = !checked
+    const status = !checked // true => false => true
     setChecked(status)
 
     !!onCheck && onCheck(status)

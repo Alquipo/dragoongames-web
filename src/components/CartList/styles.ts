@@ -24,11 +24,27 @@ export const Wrapper = styled.div<WrapperProps>`
       ${EmptyStyles.Title} {
         font-size: ${theme.font.sizes.large};
       }
+
       ${EmptyStyles.Description} {
         color: ${theme.colors.black};
         font-size: ${theme.font.sizes.medium};
       }
     `}
+  `}
+`
+
+export const Loading = styled.div`
+  ${({ theme }) => css`
+    background: ${theme.colors.white};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    min-width: 56rem;
+    svg {
+      height: 10rem;
+      width: 10rem;
+    }
   `}
 `
 
@@ -47,6 +63,7 @@ export const Footer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.medium};
       padding: ${theme.spacings.small};
@@ -57,19 +74,5 @@ export const Footer = styled.div`
 export const Total = styled.span`
   ${({ theme }) => css`
     color: ${theme.colors.primary};
-  `}
-`
-export const Loading = styled.div`
-  ${({ theme }) => css`
-    background: ${theme.colors.white};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40rem;
-    min-width: 56rem;
-    svg {
-      height: 10rem;
-      width: 10rem;
-    }
   `}
 `

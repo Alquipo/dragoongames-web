@@ -1,16 +1,16 @@
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
+
 import Base from 'templates/Base'
 
 import GameInfo, { GameInfoProps } from 'components/GameInfo'
 import Gallery, { GalleryImageProps } from 'components/Gallery'
+import GameDetails, { GameDetailsProps } from 'components/GameDetails'
 import TextContent from 'components/TextContent'
-
-import GameDetail, { GameDetailsProps } from 'components/GameDetails'
+import Showcase from 'components/Showcase'
+import { Divider } from 'components/Divider'
 import { GameCardProps } from 'components/GameCard'
 import { HighlightProps } from 'components/Highlight'
-import { Divider } from 'components/Divider'
-import Showcase from 'components/Showcase'
 
 import * as S from './styles'
 
@@ -24,9 +24,10 @@ export type GameTemplateProps = {
   upcomingTitle: string
   upcomingGames: GameCardProps[]
   upcomingHighlight: HighlightProps
-  recommendedGames: GameCardProps[]
   recommendedTitle: string
+  recommendedGames: GameCardProps[]
 }
+
 const Game = ({
   slug,
   cover,
@@ -35,10 +36,10 @@ const Game = ({
   description,
   details,
   upcomingTitle,
-  recommendedGames,
-  recommendedTitle,
   upcomingGames,
-  upcomingHighlight
+  upcomingHighlight,
+  recommendedTitle,
+  recommendedGames
 }: GameTemplateProps) => (
   <Base>
     <NextSeo
@@ -57,7 +58,6 @@ const Game = ({
         ]
       }}
     />
-
     <S.Cover>
       <Image src={cover} alt={gameInfo.title} layout="fill" />
     </S.Cover>
@@ -76,7 +76,7 @@ const Game = ({
       </S.SectionDescription>
 
       <S.SectionGameDetails>
-        <GameDetail {...details} />
+        <GameDetails {...details} />
         <Divider />
       </S.SectionGameDetails>
 

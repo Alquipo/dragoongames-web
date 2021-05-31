@@ -16,7 +16,6 @@ export default {
     buttonLabel: 'Buy now',
     buttonLink: '/games/defy-death'
   },
-
   parameters: {
     layout: 'fullscreen'
   }

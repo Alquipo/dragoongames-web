@@ -1,13 +1,10 @@
-import formatPrice from 'utils/format-price'
-
 import CartButton from 'components/CartButton'
 import WishlistButton from 'components/WishlistButton'
-
 import Heading from 'components/Heading'
 import Ribbon from 'components/Ribbon'
+import formatPrice from 'utils/format-price'
 
 import * as S from './styles'
-import React from 'react'
 
 export type GameInfoProps = {
   id: string

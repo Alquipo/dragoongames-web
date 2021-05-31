@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
-import CartList from '.'
+import CartList, { CartListProps } from '.'
 
 import items from './mock'
 
@@ -43,7 +43,7 @@ WithButton.args = {
   cartContextValue: { items }
 }
 
-export const Empty: Story = () => (
+export const Empty: Story<CartListProps> = () => (
   <div style={{ maxWidth: 800 }}>
     <CartList />
   </div>

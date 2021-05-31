@@ -7,7 +7,6 @@ describe('<Ribbon />', () => {
     const { container } = render(<Ribbon>Best Seller</Ribbon>)
 
     expect(screen.getByText(/Best Seller/i)).toBeInTheDocument()
-
     expect(container.firstChild).toMatchSnapshot()
   })
 
@@ -15,7 +14,7 @@ describe('<Ribbon />', () => {
     render(<Ribbon>Best Seller</Ribbon>)
 
     expect(screen.getByText(/Best Seller/i)).toHaveStyle({
-      backgroundColor: '#f231A5'
+      backgroundColor: '#F231A5'
     })
   })
 
@@ -28,7 +27,7 @@ describe('<Ribbon />', () => {
   })
 
   it('should render with the normal size as default', () => {
-    render(<Ribbon color="secondary">Best Seller</Ribbon>)
+    render(<Ribbon>Best Seller</Ribbon>)
 
     expect(screen.getByText(/Best Seller/i)).toHaveStyle({
       height: '3.6rem',

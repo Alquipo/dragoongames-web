@@ -1,5 +1,4 @@
 import { render, screen } from 'utils/test-utils'
-
 import userEvent from '@testing-library/user-event'
 import { css } from 'styled-components'
 
@@ -16,11 +15,9 @@ describe('<ExploreSidebar />', () => {
     expect(
       screen.getByRole('heading', { name: /sort by/i })
     ).toBeInTheDocument()
-
     expect(
       screen.getByRole('heading', { name: /platforms/i })
     ).toBeInTheDocument()
-
     expect(screen.getByRole('heading', { name: /genre/i })).toBeInTheDocument()
   })
 
@@ -82,6 +79,7 @@ describe('<ExploreSidebar />', () => {
     userEvent.click(screen.getByLabelText(/linux/i))
     userEvent.click(screen.getByLabelText(/low to high/i))
 
+    // 1st render (initialValues) + 3 clicks
     expect(onFilter).toHaveBeenCalledTimes(4)
 
     expect(onFilter).toBeCalledWith({
@@ -90,7 +88,7 @@ describe('<ExploreSidebar />', () => {
     })
   })
 
-  it('should switch between radio options', () => {
+  it('should altern between radio options', () => {
     const onFilter = jest.fn()
 
     render(<ExploreSidebar items={items} onFilter={onFilter} />)
@@ -126,7 +124,9 @@ describe('<ExploreSidebar />', () => {
     expect(Element).not.toHaveStyleRule('opacity', '1', variant)
 
     userEvent.click(screen.getByLabelText(/open filters/))
+
     userEvent.click(screen.getByRole('button', { name: /filter/i }))
+
     expect(Element).not.toHaveStyleRule('opacity', '1', variant)
   })
 })

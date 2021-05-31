@@ -1,8 +1,8 @@
 import OrdersList, { OrdersListProps } from 'components/OrdersList'
 import Profile from 'templates/Profile'
 
+import protectedRoutes from 'utils/protected-routes'
 import { GetServerSidePropsContext } from 'next'
-import protectedRoutes from 'utils/protectedRoutes'
 import { initializeApollo } from 'utils/apollo'
 import {
   QueryOrders,
@@ -11,7 +11,7 @@ import {
 import { QUERY_ORDERS } from 'graphql/queries/orders'
 import { ordersMapper } from 'utils/mappers'
 
-export default function ProfileOrders({ items }: OrdersListProps) {
+export default function Orders({ items }: OrdersListProps) {
   return (
     <Profile>
       <OrdersList items={items} />

@@ -1,11 +1,20 @@
 import styled, { css } from 'styled-components'
+import { darken } from 'polished'
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.button`
   ${({ theme }) => css`
     color: ${theme.colors.white};
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     width: 2.4rem;
     height: 2.4rem;
     position: relative;
+    transition: color ${theme.transition.default};
+
+    &:hover {
+      color: ${darken(0.3, theme.colors.white)};
+    }
   `}
 `
 

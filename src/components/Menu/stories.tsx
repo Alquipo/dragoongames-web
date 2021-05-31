@@ -4,7 +4,6 @@ import Menu, { MenuProps } from '.'
 export default {
   title: 'Menu',
   component: Menu,
-
   parameters: {
     layout: 'fullscreen',
     backgrounds: {
@@ -18,5 +17,5 @@ export const Default: Story<MenuProps> = (args) => <Menu {...args} />
 export const Logged: Story<MenuProps> = (args) => <Menu {...args} />
 
 Logged.args = {
-  username: 'Alquipo'
+  username: 'John Doe'
 }

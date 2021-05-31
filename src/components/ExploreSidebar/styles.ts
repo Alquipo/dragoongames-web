@@ -47,6 +47,7 @@ export const Items = styled.div`
     & > div:not(:last-of-type) {
       margin-bottom: ${theme.spacings.xsmall};
     }
+
     & + div {
       border-top: 0.1rem solid ${rgba(theme.colors.gray, 0.2)};
       margin-top: ${theme.spacings.small};
@@ -111,11 +112,13 @@ const wrapperModifiers = {
 
     ${IconWrapper} {
       color: ${theme.colors.black};
+
       > svg {
         position: absolute;
         width: 30px;
         right: 0.8rem;
         top: 0.8rem;
+
         &:first-child {
           display: none;
         }
@@ -126,6 +129,7 @@ const wrapperModifiers = {
   close: (theme: DefaultTheme) => css`
     ${IconWrapper} {
       color: ${theme.colors.white};
+
       > svg:last-child {
         display: none;
       }

@@ -1,6 +1,5 @@
 import theme from 'styles/theme'
 import { render } from 'utils/test-utils'
-
 import { Container } from '.'
 
 describe('<Container />', () => {

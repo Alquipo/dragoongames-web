@@ -11,7 +11,7 @@ const props = {
 }
 
 describe('<GameInfo />', () => {
-  it('should render game information', () => {
+  it('should render game informations', () => {
     const { container } = render(<GameInfo {...props} />)
 
     expect(

@@ -10,7 +10,6 @@ export const HighlightFragment = gql`
     floatImage {
       url
     }
-
     buttonLabel
     buttonLink
     alignment

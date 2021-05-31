@@ -1,10 +1,14 @@
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  img {
+    object-fit: cover;
+  }
 `
 
 export const Title = styled.h2`

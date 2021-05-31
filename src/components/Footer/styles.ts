@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components'
-
-import * as HeadingStyles from 'components/Heading/styles'
 import media from 'styled-media-query'
 import { darken } from 'polished'
+
+import * as HeadingStyles from 'components/Heading/styles'
 
 export const Wrapper = styled.footer`
   ${HeadingStyles.Wrapper} {
@@ -13,7 +13,7 @@ export const Wrapper = styled.footer`
 export const Content = styled.div`
   ${({ theme }) => css`
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(auto, 50%) 1fr;
     gap: ${theme.grid.gutter};
     margin-top: ${theme.spacings.medium};
 
@@ -32,6 +32,10 @@ export const Column = styled.div`
       text-decoration: none;
       margin-bottom: ${theme.spacings.xxsmall};
       font-size: ${theme.font.sizes.medium};
+    }
+    a {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
     a:hover {
       text-decoration: underline;

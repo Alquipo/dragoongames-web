@@ -1,19 +1,19 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import { signIn } from 'next-auth/client'
 import {
   AccountCircle,
   Email,
-  Lock,
-  ErrorOutline
+  ErrorOutline,
+  Lock
 } from '@styled-icons/material-outlined'
 
 import { FormWrapper, FormLink, FormLoading, FormError } from 'components/Form'
 import Button from 'components/Button'
 import TextField from 'components/TextField'
 import { UsersPermissionsRegisterInput } from 'graphql/generated/globalTypes'
-import { MUTATION_REGISTER } from 'graphql/mutations/register'
+import React, { useState } from 'react'
 import { useMutation } from '@apollo/client'
-import { signIn } from 'next-auth/client'
+import { MUTATION_REGISTER } from 'graphql/mutations/register'
 import { FieldErrors, signUpValidate } from 'utils/validations'
 
 const FormSignUp = () => {
@@ -44,6 +44,7 @@ const FormSignUp = () => {
   const handleInput = (field: string, value: string) => {
     setValues((s) => ({ ...s, [field]: value }))
   }
+
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
     setFormError('')
@@ -87,7 +88,7 @@ const FormSignUp = () => {
         <TextField
           name="email"
           placeholder="Email"
-          type="email"
+          type="text"
           error={fieldError?.email}
           onInputChange={(v) => handleInput('email', v)}
           icon={<Email />}

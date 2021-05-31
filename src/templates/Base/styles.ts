@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
+  margin-top: 7rem;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -14,6 +15,7 @@ export const Content = styled.div`
     flex: 1 0 auto;
   `}
 `
+
 export const SectionFooter = styled.section`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.large};

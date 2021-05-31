@@ -16,6 +16,7 @@ describe('<CartDropdown />', () => {
 
     render(<CartDropdown />, { cartProviderProps })
   })
+
   it('should render <CartIcon /> and its badge', () => {
     expect(screen.getByLabelText(/shopping cart/i)).toBeInTheDocument()
     expect(screen.getByText(`${items.length}`)).toBeInTheDocument()

@@ -4,17 +4,18 @@ import Heading from 'components/Heading'
 import Logo from 'components/Logo'
 import * as S from './styles'
 
+const currentYear = new Date().getFullYear()
+
 const Footer = () => (
   <S.Wrapper>
     <Logo color="black" />
     <S.Content>
-      <S.Column aria-label="contact">
+      <S.Column>
         <Heading color="black" size="small" lineBottom lineColor="secondary">
           Contact Us
         </Heading>
 
         <a href="mailto:sac@wongames.com">sac@wongames.com</a>
-        <a href="tel:+55229999999999">+55 22 9999999999</a>
       </S.Column>
 
       <S.Column aria-labelledby="social-media">
@@ -72,17 +73,17 @@ const Footer = () => (
         </nav>
       </S.Column>
 
-      <S.Column aria-label="location">
+      <S.Column aria-label="contact">
         <Heading color="black" lineColor="secondary" lineBottom size="small">
           Location
         </Heading>
-        <span>Rua 7 de Maio</span>
-        <span>527 - 89020330</span>
-        <span>Rio de Janeiro, Brasil</span>
+        <span>Lorem ipsum dolor sit.</span>
+        <span>Lorem Ipsum</span>
+        <span>Lorem, ipsum dolor.</span>
       </S.Column>
     </S.Content>
 
-    <S.Copyright>Won Games 2020 © All rights reserved.</S.Copyright>
+    <S.Copyright>Won Games {currentYear} © All rights reserved.</S.Copyright>
   </S.Wrapper>
 )
 

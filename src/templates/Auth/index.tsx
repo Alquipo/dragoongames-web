@@ -9,7 +9,10 @@ type AuthProps = {
   title: string
   children: React.ReactNode
 }
-const Auth = ({ children, title }: AuthProps) => (
+
+const currentYear = new Date().getFullYear()
+
+const Auth = ({ title, children }: AuthProps) => (
   <S.Wrapper>
     <S.BannerBlock>
       <Image
@@ -28,11 +31,13 @@ const Auth = ({ children, title }: AuthProps) => (
         <div>
           <Heading size="huge">All your favorite games in one place</Heading>
           <S.Subtitle>
-            <strong>Won</strong> is the best and most complete gaming platform
+            <strong>WON</strong> is the best and most complete gaming platform.
           </S.Subtitle>
         </div>
 
-        <S.Footer>Won Games 2020 © Todos os Direitos Reservados</S.Footer>
+        <S.Footer>
+          Won Games {currentYear} © Todos os Direitos Reservados
+        </S.Footer>
       </S.BannerContent>
     </S.BannerBlock>
 
@@ -40,7 +45,7 @@ const Auth = ({ children, title }: AuthProps) => (
       <S.ContentWrapper>
         <Link href="/">
           <a>
-            <Logo color="black" size="large" id="content" />
+            <Logo id="content" color="black" size="large" />
           </a>
         </Link>
         <Heading color="black" lineColor="secondary" lineLeft>

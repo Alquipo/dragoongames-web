@@ -11,6 +11,7 @@ describe('<CartList />', () => {
       items,
       total: 'R$ 330,00'
     }
+
     const { container } = render(<CartList />, { cartProviderProps })
 
     expect(screen.getAllByRole('heading')).toHaveLength(2)

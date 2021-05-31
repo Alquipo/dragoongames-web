@@ -2,6 +2,7 @@ import { Container } from 'components/Container'
 import Footer from 'components/Footer'
 import Menu from 'components/Menu'
 import { useSession } from 'next-auth/client'
+
 import * as S from './styles'
 
 export type BaseTemplateProps = {

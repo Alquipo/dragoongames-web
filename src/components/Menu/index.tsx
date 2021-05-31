@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Menu2 as MenuIcon } from '@styled-icons/remix-fill/Menu2'
 import { Search as SearchIcon } from '@styled-icons/material-outlined/Search'
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close'
 
-import Logo from 'components/Logo'
 import Button from 'components/Button'
+import Logo from 'components/Logo'
 import MediaMatch from 'components/MediaMatch'
 import * as S from './styles'
 import CartDropdown from 'components/CartDropdown'
@@ -22,7 +22,7 @@ const Menu = ({ username, loading }: MenuProps) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <S.Wrapper>
+    <S.Wrapper isOpen={isOpen}>
       <MediaMatch lessThan="medium">
         <S.IconWrapper onClick={() => setIsOpen(true)}>
           <MenuIcon aria-label="Open Menu" />
@@ -42,9 +42,8 @@ const Menu = ({ username, loading }: MenuProps) => {
           <Link href="/" passHref>
             <S.MenuLink>Home</S.MenuLink>
           </Link>
-
           <Link href="/games" passHref>
-            <S.MenuLink>Explorer</S.MenuLink>
+            <S.MenuLink>Explore</S.MenuLink>
           </Link>
         </S.MenuNav>
       </MediaMatch>
@@ -67,11 +66,10 @@ const Menu = ({ username, loading }: MenuProps) => {
                 </Link>
               </MediaMatch>
             </S.IconWrapper>
-
             <MediaMatch greaterThan="medium">
               {!username ? (
                 <Link href="/sign-in" passHref>
-                  <Button as="a">Sign In</Button>
+                  <Button as="a">Sign in</Button>
                 </Link>
               ) : (
                 <UserDropdown username={username} />
@@ -88,9 +86,8 @@ const Menu = ({ username, loading }: MenuProps) => {
               <Link href="/" passHref>
                 <S.MenuLink>Home</S.MenuLink>
               </Link>
-
               <Link href="/games" passHref>
-                <S.MenuLink>Explorer</S.MenuLink>
+                <S.MenuLink>Explore</S.MenuLink>
               </Link>
 
               {!!username && (
@@ -109,7 +106,7 @@ const Menu = ({ username, loading }: MenuProps) => {
               <S.RegisterBox>
                 <Link href="/sign-in" passHref>
                   <Button fullWidth size="large" as="a">
-                    Sign In
+                    Sign in
                   </Button>
                 </Link>
                 <span>or</span>

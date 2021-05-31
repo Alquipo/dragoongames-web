@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<GameInfo /> should render game information 1`] = `
+exports[`<GameInfo /> should render game informations 1`] = `
 .c7 {
   display: inline-block;
   vertical-align: middle;
@@ -35,7 +35,7 @@ exports[`<GameInfo /> should render game information 1`] = `
 }
 
 .c6:focus {
-  outline: 1px dashed;
+  box-shadow: 0 0 0 3px #3CD3C1;
 }
 
 .c6:hover {
@@ -80,7 +80,7 @@ exports[`<GameInfo /> should render game information 1`] = `
 }
 
 .c8:focus {
-  outline: 1px dashed;
+  box-shadow: 0 0 0 3px #3CD3C1;
 }
 
 .c8:hover {
@@ -109,7 +109,7 @@ exports[`<GameInfo /> should render game information 1`] = `
 .c1::after {
   position: absolute;
   left: 0;
-  bottom: -1rem;
+  bottom: -0.5rem;
   content: '';
   width: 5rem;
   border-bottom: 0.5rem solid #F231A5;
@@ -284,6 +284,7 @@ exports[`<GameInfo /> should render game information 1`] = `
     </button>
     <button
       class="c8"
+      style="filter: none;"
     >
       <svg
         aria-hidden="true"

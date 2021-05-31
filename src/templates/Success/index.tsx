@@ -1,5 +1,6 @@
 import { Done } from '@styled-icons/material-outlined/Done'
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 import Base from 'templates/Base'
 
@@ -10,7 +11,6 @@ import { HighlightProps } from 'components/Highlight'
 
 import * as S from './styles'
 import { useCart } from 'hooks/use-cart'
-import { useEffect } from 'react'
 
 export type SuccessTemplateProps = {
   recommendedTitle: string
@@ -27,7 +27,8 @@ const Success = ({
 
   useEffect(() => {
     clearCart()
-  }, [clearCart])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <Base>

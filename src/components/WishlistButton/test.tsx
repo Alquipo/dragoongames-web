@@ -1,6 +1,6 @@
 import userEvent from '@testing-library/user-event'
 import { WishlistContextDefaultValues } from 'hooks/use-wishlist'
-import { render, screen, act, waitFor } from 'utils/test-utils'
+import { act, render, screen, waitFor } from 'utils/test-utils'
 
 import WishlistButton from '.'
 

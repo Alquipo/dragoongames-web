@@ -16,6 +16,7 @@ export const QUERY_RECOMMENDED = gql`
       }
     }
   }
+
   ${GameFragment}
   ${HighlightFragment}
 `

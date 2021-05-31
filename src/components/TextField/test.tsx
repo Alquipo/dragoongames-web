@@ -1,5 +1,4 @@
 import { render, screen, waitFor } from 'utils/test-utils'
-
 import userEvent from '@testing-library/user-event'
 import { Email } from '@styled-icons/material-outlined'
 
@@ -87,7 +86,6 @@ describe('<TextField />', () => {
       <TextField
         icon={<Email data-testid="icon" />}
         label="TextField"
-        name="TextField"
         error="Error message"
       />
     )

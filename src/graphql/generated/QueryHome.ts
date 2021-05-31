@@ -119,7 +119,7 @@ export interface QueryHome_sections_newGames_highlight {
 
 export interface QueryHome_sections_newGames {
   __typename: "ComponentPageSection";
-  title: string;
+  title: string | null;
   highlight: QueryHome_sections_newGames_highlight | null;
 }
 
@@ -194,7 +194,7 @@ export interface QueryHome_sections_upcomingGames_highlight {
 
 export interface QueryHome_sections_upcomingGames {
   __typename: "ComponentPageSection";
-  title: string;
+  title: string | null;
   highlight: QueryHome_sections_upcomingGames_highlight | null;
 }
 
@@ -221,7 +221,7 @@ export interface QueryHome_sections_freeGames_highlight {
 
 export interface QueryHome_sections_freeGames {
   __typename: "ComponentPageSection";
-  title: string;
+  title: string | null;
   highlight: QueryHome_sections_freeGames_highlight | null;
 }
 

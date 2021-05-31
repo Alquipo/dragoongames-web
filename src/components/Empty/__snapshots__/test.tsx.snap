@@ -29,7 +29,7 @@ exports[`<Empty /> should render correctly 1`] = `
 }
 
 .c3:focus {
-  outline: 1px dashed;
+  box-shadow: 0 0 0 3px #3CD3C1;
 }
 
 .c3:hover {
@@ -51,6 +51,10 @@ exports[`<Empty /> should render correctly 1`] = `
   text-align: center;
 }
 
+.c0 img {
+  object-fit: cover;
+}
+
 .c1 {
   color: #F231A5;
   font-size: 2.8rem;
@@ -65,7 +69,7 @@ exports[`<Empty /> should render correctly 1`] = `
 
 <body>
   <div>
-    <main
+    <div
       class="c0"
     >
       <img
@@ -92,7 +96,7 @@ exports[`<Empty /> should render correctly 1`] = `
           Go back to store
         </span>
       </a>
-    </main>
+    </div>
   </div>
 </body>
 `;

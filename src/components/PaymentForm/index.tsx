@@ -1,23 +1,24 @@
 import Link from 'next/link'
-import { Session } from 'next-auth'
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js'
 import { PaymentIntent, StripeCardElementChangeEvent } from '@stripe/stripe-js'
 import { ErrorOutline, ShoppingCart } from '@styled-icons/material-outlined'
 
 import { useCart } from 'hooks/use-cart'
-import { createPayment, createPaymentIntent } from 'utils/stripe/methods'
-
 import Button from 'components/Button'
-import { FormLoading } from 'components/Form'
 import Heading from 'components/Heading'
 
 import * as S from './styles'
+import { createPayment, createPaymentIntent } from 'utils/stripe/methods'
+
+import { FormLoading } from 'components/Form'
+import { Session } from 'next-auth'
 
 type PaymentFormProps = {
   session: Session
 }
+
 const PaymentForm = ({ session }: PaymentFormProps) => {
   const { items } = useCart()
   const { push } = useRouter()
@@ -81,8 +82,13 @@ const PaymentForm = ({ session }: PaymentFormProps) => {
     event.preventDefault()
     setLoading(true)
 
+    // se for freeGames
     if (freeGames) {
+      // salva no banco
+      // bater na API /orders
       saveOrder()
+
+      // redireciona para success
       push('/success')
       return
     }
@@ -101,8 +107,9 @@ const PaymentForm = ({ session }: PaymentFormProps) => {
       setLoading(false)
 
       // salvar a compra no banco do Strapi
-
+      // bater na API /orders
       saveOrder(payload.paymentIntent)
+
       // redirectionar para a página de Sucesso
       push('/success')
     }
@@ -122,7 +129,11 @@ const PaymentForm = ({ session }: PaymentFormProps) => {
             <CardElement
               options={{
                 hidePostalCode: true,
-                style: { base: { fontSize: '16px' } }
+                style: {
+                  base: {
+                    fontSize: '16px'
+                  }
+                }
               }}
               onChange={handleChange}
             />
@@ -130,10 +141,7 @@ const PaymentForm = ({ session }: PaymentFormProps) => {
 
           {error && (
             <S.Error>
-              <ErrorOutline
-                size={20}
-                style={{ marginRight: '0.5rem', paddingBottom: '0.1rem' }}
-              />
+              <ErrorOutline size={20} />
               {error}
             </S.Error>
           )}
@@ -147,7 +155,7 @@ const PaymentForm = ({ session }: PaymentFormProps) => {
           <Button
             fullWidth
             icon={loading ? <FormLoading /> : <ShoppingCart />}
-            disabled={!freeGames && (disabled || !!error)}
+            disabled={!freeGames && (disabled || !!error || loading)}
           >
             {!loading && <span>Buy now</span>}
           </Button>

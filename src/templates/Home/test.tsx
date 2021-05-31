@@ -25,7 +25,7 @@ const props = {
 jest.mock('templates/Base', () => ({
   __esModule: true,
   default: function Mock({ children }: { children: React.ReactNode }) {
-    return <div data-testid="Mock Base">{children} </div>
+    return <div data-testid="Mock Base">{children}</div>
   }
 }))
 
@@ -42,16 +42,16 @@ jest.mock('components/BannerSlider', () => {
   return {
     __esModule: true,
     default: function Mock() {
-      return <div data-testid="Mock BannerSlider"></div>
+      return <div data-testid="Mock Banner Slider"></div>
     }
   }
 })
 
 describe('<Home />', () => {
-  it('should render Banner and Showcases', () => {
+  it('should render banner and showcases', () => {
     render(<Home {...props} />)
 
-    expect(screen.getByTestId('Mock BannerSlider')).toBeInTheDocument()
+    expect(screen.getByTestId('Mock Banner Slider')).toBeInTheDocument()
     expect(screen.getAllByTestId('Mock Showcase')).toHaveLength(4)
   })
 })

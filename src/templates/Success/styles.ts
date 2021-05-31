@@ -18,6 +18,7 @@ export const CheckMark = styled.div`
   ${({ theme }) => css`
     text-align: center;
     padding: ${theme.spacings.medium};
+
     svg {
       color: ${theme.colors.white};
       background: ${theme.colors.primary};
@@ -35,6 +36,7 @@ export const Text = styled.p`
     text-align: center;
     max-width: 60rem;
     margin: auto;
+
     a {
       color: ${theme.colors.primary};
       text-decoration: none;

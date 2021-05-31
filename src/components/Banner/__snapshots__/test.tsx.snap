@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Banner /> should render Banner correctly 1`] = `
+exports[`<Banner /> should render correctly 1`] = `
 .c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -29,7 +29,7 @@ exports[`<Banner /> should render Banner correctly 1`] = `
 }
 
 .c5:focus {
-  outline: 1px dashed;
+  box-shadow: 0 0 0 3px #3CD3C1;
 }
 
 .c5:hover {
@@ -72,11 +72,11 @@ exports[`<Banner /> should render Banner correctly 1`] = `
 }
 
 @media (max-width:1170px) {
-  .c0 .sc-gtsrHT {
+  .c0 .sc-gsDJrp {
     right: 0;
   }
 
-  .c0 .sc-gtsrHT::before {
+  .c0 .sc-gsDJrp::before {
     display: none;
   }
 }
