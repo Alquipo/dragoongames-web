@@ -123,7 +123,7 @@ describe('Game Page', () => {
 
     cy.wait(2000)
 
-    cy.findAllByText(/free/i).click()
+    cy.findByText(/free/i).click()
     cy.findByText(/linux/i).click()
     cy.findByText(/sports/i).click()
 

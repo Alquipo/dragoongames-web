@@ -4,7 +4,7 @@ import { createUser, User } from "../support/generate";
 
 describe('Checkout', () => {
   let user: User
-  describe.skip('Free Games', () => {
+  describe('Free Games', () => {
     before(() => {
       user = createUser()
     })
