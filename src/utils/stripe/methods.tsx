@@ -7,7 +7,7 @@ type FetcherParams = {
   token: string
 }
 
-const fetcher = async ({ body, token, url }: FetcherParams) => {
+const fetcher = async ({ url, body, token }: FetcherParams) => {
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}${url}`, {
     method: 'POST',
     headers: {
@@ -25,7 +25,10 @@ type PaymentIntentParams = {
   token: string
 }
 
-export const createPaymentIntent = ({ items, token }: PaymentIntentParams) => {
+export const createPaymentIntent = async ({
+  items,
+  token
+}: PaymentIntentParams) => {
   return fetcher({
     url: '/orders/create-payment-intent',
     body: JSON.stringify({ cart: items }),
@@ -41,8 +44,8 @@ type CreatePaymentParams = {
 
 export const createPayment = ({
   items,
-  token,
-  paymentIntent
+  paymentIntent,
+  token
 }: CreatePaymentParams) => {
   return fetcher({
     url: '/orders',

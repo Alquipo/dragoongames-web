@@ -10,7 +10,7 @@ const fieldsValidations = {
   confirm_password: Joi.string()
     .valid(Joi.ref('password'))
     .required()
-    .messages({ 'any.only': 'Confirm password does not match with password' })
+    .messages({ 'any.only': 'confirm password does not match with password' })
 }
 
 export type FieldErrors = {
@@ -55,6 +55,7 @@ type ResetValidateParams = {
   password: string
   confirm_password: string
 }
+
 export function resetValidate(values: ResetValidateParams) {
   const { password, confirm_password } = fieldsValidations
   const schema = Joi.object({ password, confirm_password })

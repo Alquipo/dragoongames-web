@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as nextImage from 'next/image'
 
 Object.defineProperty(nextImage, 'default', {

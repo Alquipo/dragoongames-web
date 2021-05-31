@@ -4,7 +4,9 @@ import {
   QueryHome_sections_freeGames_highlight
 } from 'graphql/generated/QueryHome'
 import { QueryWishlist_wishlists_games } from 'graphql/generated/QueryWishlist'
+
 import { QueryOrders_orders } from 'graphql/generated/QueryOrders'
+
 import formatPrice from 'utils/format-price'
 import { getImageUrl } from 'utils/getImageUrl'
 
@@ -65,7 +67,7 @@ export const cartMapper = (games: QueryGames_games[] | undefined) => {
     : []
 }
 
-export const ordersMapper = (orders: QueryOrders_orders[]) => {
+export const ordersMapper = (orders: QueryOrders_orders[] | undefined) => {
   return orders
     ? orders.map((order) => {
         return {

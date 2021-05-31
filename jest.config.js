@@ -10,6 +10,7 @@ module.exports = {
     '!src/types/**/*.d.ts',
     '!src/utils/apollo.ts',
     '!src/utils/apolloCache.ts',
+    '!src/types/**/*.d.ts',
     '!src/graphql/**/*.ts',
     '!src/**/mock.ts'
   ],

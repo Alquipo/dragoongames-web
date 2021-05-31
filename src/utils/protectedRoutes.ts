@@ -9,7 +9,6 @@ async function protectedRoutes(context: GetServerSidePropsContext) {
       'Location',
       `/sign-in?callbackUrl=${context.resolvedUrl}`
     )
-
     context.res.statusCode = 302
   }
 

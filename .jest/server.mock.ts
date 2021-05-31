@@ -8,8 +8,8 @@ beforeAll(() => {
 })
 
 afterEach(() => {
-  // reseta todos os handlers para caso eles sejam chamados
-  // novament
+  // reseta todos os handlers para caso eles sejam chamados novamente
+
   server.resetHandlers()
 })
 
