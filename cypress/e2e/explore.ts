@@ -25,7 +25,6 @@ describe('Game Page', () => {
     cy.getByDataCy('game-card').should('have.length', 15)
     cy.findByRole('button', { name: /show more/i }).click()
 
-    cy.wait(2000)
 
     cy.getByDataCy('game-card').should('have.length', 30)
 
@@ -33,7 +32,6 @@ describe('Game Page', () => {
 
   it('should order by price', () => {
     cy.findByText(/lowest to highest/i).click()
-    cy.wait(2000)
 
     cy.location('href').should('contain', 'sort=price%3Aasc')
     cy.getByDataCy('game-card').first().within(() => {
@@ -41,7 +39,6 @@ describe('Game Page', () => {
     })
 
     cy.findByText(/highest to lowest/i).click()
-    cy.wait(2000)
 
     cy.location('href').should('contain', 'sort=price%3Adesc')
     cy.getByDataCy('game-card').first().within(() => {
@@ -53,7 +50,6 @@ describe('Game Page', () => {
     cy.findByText(/highest to lowest/i).click()
 
     cy.findByText(/free/i).click()
-    cy.wait(1000)
 
     cy.location('href').should('contain', 'price_lte=0')
     cy.getByDataCy('game-card').first().within(() => {
@@ -61,7 +57,6 @@ describe('Game Page', () => {
     })
 
     cy.findByText('Under $50').click()
-    cy.wait(1000)
 
     cy.location('href').should('contain', 'price_lte=50')
     cy.getByDataCy('game-card').first().within(() => {
@@ -69,7 +64,6 @@ describe('Game Page', () => {
     })
 
     cy.findByText('Under $100').click()
-    cy.wait(1000)
 
     cy.location('href').should('contain', 'price_lte=100')
     cy.getByDataCy('game-card').first().within(() => {
@@ -77,7 +71,6 @@ describe('Game Page', () => {
     })
 
     cy.findByText('Under $150').click()
-    cy.wait(1000)
 
     cy.location('href').should('contain', 'price_lte=150')
     cy.getByDataCy('game-card').first().within(() => {
@@ -85,7 +78,6 @@ describe('Game Page', () => {
     })
 
     cy.findByText('Under $250').click()
-    cy.wait(1000)
 
     cy.location('href').should('contain', 'price_lte=250')
     cy.getByDataCy('game-card').first().within(() => {
@@ -93,7 +85,6 @@ describe('Game Page', () => {
     })
 
     cy.findByText('Under $500').click()
-    cy.wait(1000)
 
     cy.location('href').should('contain', 'price_lte=500')
     cy.getByDataCy('game-card').first().within(() => {
@@ -121,7 +112,6 @@ describe('Game Page', () => {
 
     cy.findByText(/highest to lowest/i).click()
 
-    cy.wait(2000)
 
     cy.findByText(/free/i).click()
     cy.findByText(/linux/i).click()

@@ -17,13 +17,11 @@ describe('Checkout', () => {
 
       // ir para explore page
       cy.findByRole('link', { name: /explore/i }).click()
-      cy.wait(2000)
 
       cy.url().should('eq', `${Cypress.config().baseUrl}/games`)
 
       // filtrar por jogos free
       cy.findByText(/highest to lowest/i).click()
-      cy.wait(3000)
       cy.findByText(/free/i).click()
       cy.url().should('contain', 'price_lte=0')
 
@@ -41,15 +39,12 @@ describe('Checkout', () => {
         cy.findByText(/buy it now/i).click()
       })
 
-      cy.wait(2000)
-
       // encontrar um texto de só jogos free
       cy.findByText(/Only free games, click buy and enjoy!/i).should('exist')
 
       // clicar para comprar
       cy.findByRole('button', { name: /buy now/i }).click()
 
-      cy.wait(2000)
 
       // redirecionar para a página de success
       cy.url().should('eq', `${Cypress.config().baseUrl}/success`)
@@ -82,15 +77,8 @@ describe('Checkout', () => {
 
       // ir para explore page
       cy.findByRole('link', { name: /explore/i }).click()
-      cy.wait(3000)
 
       cy.url().should('eq', `${Cypress.config().baseUrl}/games`)
-
-      // // filtrar por jogos highest to lowest
-      // cy.findByText(/highest to lowest/i).click()
-      // cy.wait(2000)
-
-      // cy.location('href').should('contain', 'sort=price%3Adesc')
 
       // adicionar o jogo no carrinho
       cy.addToCartByIndex(0)
@@ -106,7 +94,6 @@ describe('Checkout', () => {
         cy.findByText(/buy it now/i).click()
       })
 
-      cy.wait(3000)
       cy.url().should('eq', `${Cypress.config().baseUrl}/cart`)
 
       //o botão de comprar deve estar desabilitado
@@ -120,8 +107,6 @@ describe('Checkout', () => {
 
       // clicar para comprar
       cy.findByRole('button', { name: /buy now/i }).click()
-
-      cy.wait(2000)
 
       // redirecionar para a página de success
       cy.url().should('eq', `${Cypress.config().baseUrl}/success`)
