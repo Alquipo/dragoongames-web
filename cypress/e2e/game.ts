@@ -10,7 +10,7 @@ describe('Game Page', () => {
     cy.getByDataCy('game-info').within(() => {
       cy.findByRole('heading', { name: /Cyberpunk 2077/i }).should('exist')
       cy.findByText(/^Cyberpunk 2077 is an open-world/i).should('exist')
-      cy.findByText('$199.90').should('exist')
+      cy.findByText('$133.99').should('exist')
 
       cy.findByRole('button', { name: /add to cart/i }).should('exist')
     })
@@ -39,7 +39,7 @@ describe('Game Page', () => {
       cy.findByText(/dec 8, 2020/i).should('exist')
       cy.findByRole('img', { name: /windows/i }).should('exist')
       cy.findByText(/free/i).should('exist')
-      cy.findByText('Action / Role-playing / Sci-fi').should('exist')
+      cy.findByText('Action / Sci-fi / Role-playing').should('exist')
     })
 
     cy.shouldRenderShowcase({ name: "Upcoming Games", highlight: true })

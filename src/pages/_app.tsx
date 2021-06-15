@@ -28,8 +28,8 @@ function App({ Component, pageProps }: AppProps) {
             <WishlistProvider>
               <Head>
                 <title>Won Games</title>
-                <link rel="shortcut icon" href="/img/icon-512.png" />
-                <link rel="apple-touch-icon" href="/img/icon-512.png" />
+                <link rel="shortcut icon" href="/img/favicon.png" />
+                <link rel="apple-touch-icon" href="/img/favicon.png" />
                 <link rel="manifest" href="/manifest.json" />
                 <meta
                   name="description"
@@ -46,9 +46,14 @@ function App({ Component, pageProps }: AppProps) {
               />
               <StickyNote>
                 <p>
-                  Esse é um site de estudos! Quer fazer um site igual? Aprenda
-                  no curso{' '}
-                  <a href="https://reactavancado.com.br">React Avançado</a>
+                  Esse é um site de estudos! Quer saber mais acesse o{' '}
+                  <a
+                    target="_blank"
+                    href="https://github.com/Alquipo/wongames-client"
+                    rel="noreferrer"
+                  >
+                    Github
+                  </a>
                 </p>
               </StickyNote>
               <Component {...pageProps} />

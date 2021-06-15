@@ -51,7 +51,7 @@ Cypress.Commands.add('signIn', (email = 'e2e@wongames.com', password = '123456')
 
 Cypress.Commands.add('shouldRenderBanner', () => {
   cy.get('.slick-slider').within(() => {
-    cy.findAllByRole('heading', { name: /Cyberpunk 2077/i })
+    cy.findAllByRole('heading', { name: /Biomutant/i })
     cy.findByRole('link', { name: /buy now/i })
 
     cy.get('.slick-dots > :nth-child(2) > button').click()
@@ -62,8 +62,8 @@ Cypress.Commands.add('shouldRenderBanner', () => {
 
     cy.get('.slick-dots > :nth-child(3) > button').click()
 
-    cy.findAllByRole('heading', { name: /Huge promotion!/i })
-    cy.findByRole('link', { name: /Browse Games/i })
+    cy.findAllByRole('heading', { name: /Cyberpunk 2077/i })
+    cy.findByRole('link', { name: /Buy now/i })
 
 
   })
