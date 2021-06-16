@@ -37,7 +37,7 @@ describe('Game Page', () => {
 
       cy.findAllByText(/cd projekt red/i).should('have.length', 2)
       cy.wait(2000)
-      cy.findByText(/Dec 8, 2020/i).should('exist')
+      cy.findAllByText(/Dec 8, 2020/i).should('exist')
       cy.findByRole('img', { name: /windows/i }).should('exist')
       cy.findByText(/free/i).should('exist')
       cy.findByText('Action / Sci-fi / Role-playing').should('exist')
