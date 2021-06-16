@@ -110,6 +110,7 @@ describe('Game Page', () => {
     // clear url
     cy.visit('/games')
 
+    cy.wait(2000)
     cy.findByText(/highest to lowest/i).click()
 
 
