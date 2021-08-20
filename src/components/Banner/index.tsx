@@ -31,7 +31,6 @@ const Banner = ({
         {ribbon}
       </Ribbon>
     )}
-
     <S.ImageWrapper>
       <Image src={img} alt={title} layout="fill" objectFit="cover" />
     </S.ImageWrapper>
