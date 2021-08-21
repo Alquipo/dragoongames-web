@@ -24,7 +24,7 @@ const Auth = ({ title, children }: AuthProps) => (
       <S.BannerContent>
         <Link href="/">
           <a>
-            <Logo id="banner" size="large" />
+            <Logo size="large" />
           </a>
         </Link>
 
@@ -46,7 +46,7 @@ const Auth = ({ title, children }: AuthProps) => (
       <S.ContentWrapper>
         <Link href="/">
           <a>
-            <Logo id="content" color="black" size="large" />
+            <Logo color="black" size="large" />
           </a>
         </Link>
         <Heading color="black" lineColor="secondary" lineLeft>
