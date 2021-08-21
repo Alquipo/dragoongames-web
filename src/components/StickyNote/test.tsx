@@ -14,7 +14,7 @@ describe('<StickyNote />', () => {
   right: 0;
   padding: 1rem;
   margin-bottom: 6rem;
-  background-color: #0a1d3e;
+  background-color: #010207;
   color: #FAFAFA;
   text-align: center;
   display: -webkit-box;
@@ -33,7 +33,7 @@ describe('<StickyNote />', () => {
 }
 
 .c0 a {
-  color: #EB46CE;
+  color: #CD113B;
 }
 
 .c0 a,

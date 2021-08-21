@@ -67,7 +67,7 @@ describe('useCart', () => {
     })
 
     expect(result.current.quantity).toBe(1)
-    expect(window.localStorage.getItem('WONGAMES_cartItems')).toBe(
+    expect(window.localStorage.getItem('DRAGOONGAMES_cartItems')).toBe(
       JSON.stringify(['1'])
     )
   })
@@ -90,7 +90,7 @@ describe('useCart', () => {
     })
 
     expect(result.current.quantity).toBe(0)
-    expect(window.localStorage.getItem('WONGAMES_cartItems')).toBe(
+    expect(window.localStorage.getItem('DRAGOONGAMES_cartItems')).toBe(
       JSON.stringify([])
     )
   })
@@ -113,7 +113,7 @@ describe('useCart', () => {
     })
 
     expect(result.current.quantity).toBe(0)
-    expect(window.localStorage.getItem('WONGAMES_cartItems')).toBe(
+    expect(window.localStorage.getItem('DRAGOONGAMES_cartItems')).toBe(
       JSON.stringify([])
     )
   })

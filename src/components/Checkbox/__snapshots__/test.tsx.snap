@@ -31,7 +31,7 @@ exports[`<Checkbox /> should render with label 1`] = `
   appearance: none;
   width: 1.8rem;
   height: 1.8rem;
-  border: 0.2rem solid #EB46CE;
+  border: 0.2rem solid #CD113B;
   border-radius: 0.2rem;
   -webkit-transition: background border 0.1s ease-in-out;
   transition: background border 0.1s ease-in-out;
@@ -57,19 +57,19 @@ exports[`<Checkbox /> should render with label 1`] = `
 }
 
 .c1:focus {
-  box-shadow: 0 0 0.5rem #EB46CE;
+  box-shadow: 0 0 0.5rem #CD113B;
 }
 
 .c1:hover {
-  border-color: #EB46CE;
-  box-shadow: 0 0 0.5rem #EB46CE;
+  border-color: #CD113B;
+  box-shadow: 0 0 0.5rem #CD113B;
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
 }
 
 .c1:checked {
-  border-color: #EB46CE;
-  background: #EB46CE;
+  border-color: #CD113B;
+  background: #CD113B;
 }
 
 .c1:checked:before {

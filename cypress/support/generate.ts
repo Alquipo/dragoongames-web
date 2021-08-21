@@ -14,6 +14,6 @@ export const createUser = build<User>('User', {
   },
   postBuild: user => ({
     ...user,
-    email: `${user.username.toLowerCase()}+e2e@wongames.com`
+    email: `${user.username.toLowerCase()}+e2e@dragoongames.com`
   })
 })

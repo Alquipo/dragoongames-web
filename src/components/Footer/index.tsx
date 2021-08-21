@@ -15,7 +15,7 @@ const Footer = () => (
           Contact Us
         </Heading>
 
-        <a href="mailto:sac@wongames.com">sac@dragoongames.com</a>
+        <a href="mailto:sac@dragoongames.com">sac@dragoongames.com</a>
       </S.Column>
 
       <S.Column aria-labelledby="social-media">

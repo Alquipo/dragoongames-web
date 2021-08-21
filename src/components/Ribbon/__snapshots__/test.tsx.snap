@@ -15,7 +15,7 @@ exports[`<Ribbon /> should render the text correctly 1`] = `
   font-weight: 600;
   color: #FAFAFA;
   z-index: 10;
-  background-color: #EB46CE;
+  background-color: #CD113B;
   font-size: 1.4rem;
   padding: 0 2.4rem;
   height: 3.6rem;
@@ -34,8 +34,8 @@ exports[`<Ribbon /> should render the text correctly 1`] = `
 }
 
 .c0::before {
-  border-left-color: #b7149a;
-  border-top-color: #b7149a;
+  border-left-color: #6f0920;
+  border-top-color: #6f0920;
 }
 
 .c0::before {

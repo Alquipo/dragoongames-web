@@ -1,5 +1,6 @@
 import { CartContextDefaultValues } from 'hooks/use-cart'
 import { render, screen } from 'utils/test-utils'
+import theme from 'styles/theme'
 
 import CartList from '.'
 import items from './mock'
@@ -15,7 +16,9 @@ describe('<CartList />', () => {
     const { container } = render(<CartList />, { cartProviderProps })
 
     expect(screen.getAllByRole('heading')).toHaveLength(2)
-    expect(screen.getByText('R$ 330,00')).toHaveStyle({ color: '#EB46CE' })
+    expect(screen.getByText('R$ 330,00')).toHaveStyle({
+      color: theme.colors.primary
+    })
 
     expect(container.firstChild).toMatchSnapshot()
   })

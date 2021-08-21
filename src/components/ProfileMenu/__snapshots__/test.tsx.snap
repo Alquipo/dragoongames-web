@@ -35,7 +35,7 @@ exports[`<ProfileMenu /> should render the menu 1`] = `
 }
 
 .c1:hover {
-  background: #EB46CE;
+  background: #CD113B;
   color: #FAFAFA;
 }
 

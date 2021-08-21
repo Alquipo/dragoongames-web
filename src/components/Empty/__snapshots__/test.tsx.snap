@@ -14,7 +14,7 @@ exports[`<Empty /> should render correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: linear-gradient(180deg,#d649f5 0%,#eb46ce 50%);
+  background: linear-gradient(180deg,#9d0208 0%,#d00000 50%);
   color: #FAFAFA;
   font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
   border: 0;
@@ -29,11 +29,11 @@ exports[`<Empty /> should render correctly 1`] = `
 }
 
 .c3:focus {
-  box-shadow: 0 0 0 3px #1f60ca;
+  box-shadow: 0 0 0 3px #faa307;
 }
 
 .c3:hover {
-  background: linear-gradient(180deg,#d239f4 0%,#e937ca 50%);
+  background: linear-gradient(180deg,#8c0207 0%,#bf0000 50%);
 }
 
 .c0 {
@@ -56,7 +56,7 @@ exports[`<Empty /> should render correctly 1`] = `
 }
 
 .c1 {
-  color: #EB46CE;
+  color: #CD113B;
   font-size: 2.8rem;
 }
 
@@ -74,9 +74,9 @@ exports[`<Empty /> should render correctly 1`] = `
     >
       <img
         alt="A gamer in a couch playing videogame"
-        height="285"
-        src="/img/empty.svg"
-        width="380"
+        height="260"
+        src="/img/empty.png"
+        width="320"
       />
       <h2
         class="c1"

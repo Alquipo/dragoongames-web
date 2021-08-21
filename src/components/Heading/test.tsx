@@ -25,7 +25,7 @@ describe('<Heading />', () => {
     render(<Heading lineLeft>Dragoon Games</Heading>)
     expect(screen.getByRole('heading', { name: /Dragoon games/i })).toHaveStyle(
       {
-        'border-left': '0.7rem solid #EB46CE'
+        'border-left': '0.7rem solid #CD113B'
       }
     )
   })
@@ -34,7 +34,7 @@ describe('<Heading />', () => {
     render(<Heading lineBottom>Dragoon Games</Heading>)
     expect(
       screen.getByRole('heading', { name: /Dragoon games/i })
-    ).toHaveStyleRule('border-bottom', '0.5rem solid #EB46CE', {
+    ).toHaveStyleRule('border-bottom', '0.5rem solid #CD113B', {
       modifier: '::after'
     })
   })
@@ -72,8 +72,8 @@ describe('<Heading />', () => {
     )
 
     const heading = screen.getByRole('heading', { name: /lorem ipsum/i })
-    expect(heading).toHaveStyle({ 'border-left': '0.7rem solid #EB46CE' })
-    expect(heading).toHaveStyleRule('border-bottom', '0.5rem solid #EB46CE', {
+    expect(heading).toHaveStyle({ 'border-left': '0.7rem solid #CD113B' })
+    expect(heading).toHaveStyleRule('border-bottom', '0.5rem solid #CD113B', {
       modifier: '::after'
     })
   })
@@ -86,8 +86,8 @@ describe('<Heading />', () => {
     )
 
     const heading = screen.getByRole('heading', { name: /lorem ipsum/i })
-    expect(heading).toHaveStyle({ 'border-left': '0.7rem solid #1f60ca' })
-    expect(heading).toHaveStyleRule('border-bottom', '0.5rem solid #1f60ca', {
+    expect(heading).toHaveStyle({ 'border-left': '0.7rem solid #faa307' })
+    expect(heading).toHaveStyleRule('border-bottom', '0.5rem solid #faa307', {
       modifier: '::after'
     })
   })

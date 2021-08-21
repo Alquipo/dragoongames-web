@@ -24,7 +24,7 @@ exports[`<FormSignUp /> should render the form 1`] = `
 }
 
 .c2:focus-within {
-  box-shadow: 0 0 0.5rem #EB46CE;
+  box-shadow: 0 0 0.5rem #CD113B;
 }
 
 .c5 {
@@ -79,7 +79,7 @@ exports[`<FormSignUp /> should render the form 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: linear-gradient(180deg,#d649f5 0%,#eb46ce 50%);
+  background: linear-gradient(180deg,#9d0208 0%,#d00000 50%);
   color: #FAFAFA;
   font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
   border: 0;
@@ -95,11 +95,11 @@ exports[`<FormSignUp /> should render the form 1`] = `
 }
 
 .c7:focus {
-  box-shadow: 0 0 0 3px #1f60ca;
+  box-shadow: 0 0 0 3px #faa307;
 }
 
 .c7:hover {
-  background: linear-gradient(180deg,#d239f4 0%,#e937ca 50%);
+  background: linear-gradient(180deg,#8c0207 0%,#bf0000 50%);
 }
 
 .c0 .c1 {
@@ -117,17 +117,17 @@ exports[`<FormSignUp /> should render the form 1`] = `
 }
 
 .c8 a {
-  color: #1f60ca;
+  color: #faa307;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border-bottom: 0.1rem solid #1f60ca;
+  border-bottom: 0.1rem solid #faa307;
   -webkit-transition: color,border,0.1s ease-in-out;
   transition: color,border,0.1s ease-in-out;
 }
 
 .c8 a:hover {
-  color: #184b9e;
-  border-bottom: 0.1rem solid #184b9e;
+  color: #ca8304;
+  border-bottom: 0.1rem solid #ca8304;
 }
 
 <div

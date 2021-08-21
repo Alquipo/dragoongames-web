@@ -88,7 +88,7 @@ export const ordersMapper = (orders: QueryOrders_orders[] | undefined) => {
             id: game.id,
             title: game.name,
             downloadLink:
-              'https://wongames.com/game/download/yuYT56Tgh431LkjhNBgdf',
+              'https://dragoongames.com/game/download/yuYT56Tgh431LkjhNBgdf',
             img: `${getImageUrl(game.cover?.url)}`,
             price: formatPrice(game.price)
           }))
