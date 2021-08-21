@@ -43,12 +43,12 @@ const Game = ({
 }: GameTemplateProps) => (
   <Base>
     <NextSeo
-      title={`${gameInfo.title} - Won Games`}
+      title={`${gameInfo.title} - Dragoon Games`}
       description={gameInfo.description}
-      canonical={`https://wongames.alquipo.dev/game/${slug}`}
+      canonical={`https://dragoongames.alquipo.dev/game/${slug}`}
       openGraph={{
-        url: `https://wongames.alquipo.dev/game/${slug}`,
-        title: `${gameInfo.title} - Won Games`,
+        url: `https://dragoongames.alquipo.dev/game/${slug}`,
+        title: `${gameInfo.title} - Dragoon Games`,
         description: gameInfo.description,
         images: [
           {

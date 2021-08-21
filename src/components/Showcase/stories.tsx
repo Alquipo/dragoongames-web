@@ -16,7 +16,7 @@ export default {
   parameters: {
     layout: 'fullscreen',
     backgrounds: {
-      default: 'won-dark'
+      default: 'wodragoonn-dark'
     }
   }
 } as Meta

@@ -31,7 +31,7 @@ export const BannerBlock = styled.div`
       bottom: 0;
       left: 0;
       right: 0;
-      background: ${theme.colors.black};
+      background: ${theme.colors.mainBg};
       opacity: 0.85;
     }
   `}
@@ -50,6 +50,7 @@ export const BannerContent = styled.div`
     a {
       width: fit-content;
       height: fit-content;
+      margin-top: 2rem;
     }
   `}
 `

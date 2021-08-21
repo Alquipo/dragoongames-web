@@ -74,5 +74,6 @@ export const Footer = styled.div`
 export const Total = styled.span`
   ${({ theme }) => css`
     color: ${theme.colors.primary};
+    font-size: ${theme.font.sizes.large};
   `}
 `

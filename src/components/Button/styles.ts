@@ -55,7 +55,7 @@ export const Wrapper = styled.button<WrapperProps>`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, #ff5f5f 0%, #f062c0 50%);
+    background: linear-gradient(180deg, #d649f5 0%, #eb46ce 50%);
     color: ${theme.colors.white};
     font-family: ${theme.font.family};
     border: 0;
@@ -71,7 +71,7 @@ export const Wrapper = styled.button<WrapperProps>`
     &:hover {
       background: ${minimal
         ? 'none'
-        : `linear-gradient(180deg, #e35565 0%, #d958a6 50%)`};
+        : `linear-gradient(180deg, #d239f4 0%, #e937ca 50%)`};
     }
 
     ${!!size && wrapperModifiers[size](theme)};

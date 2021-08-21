@@ -53,7 +53,7 @@ describe('<PaymentForm />', () => {
     session = {
       jwt: 'token',
       user: {
-        email: 'won@games.com'
+        email: 'dragoon@games.com'
       },
       expires: '13234'
     }

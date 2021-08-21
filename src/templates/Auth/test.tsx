@@ -11,7 +11,9 @@ describe('<Auth />', () => {
     )
 
     // verifiquem se tem 2 logos
-    expect(screen.getAllByRole('img', { name: 'Won Games' })).toHaveLength(2)
+    expect(screen.getAllByRole('img', { name: 'Dragoon Games' })).toHaveLength(
+      2
+    )
 
     // verifica se tem o heading principal do banner
     expect(
@@ -23,7 +25,7 @@ describe('<Auth />', () => {
     // verifica se tem o subtitle
     expect(
       screen.getByRole('heading', {
-        name: /won is the best and most complete gaming platform/i
+        name: /Dragoon is the best and most complete gaming platform/i
       })
     ).toBeInTheDocument()
 

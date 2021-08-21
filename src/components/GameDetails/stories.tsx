@@ -7,7 +7,7 @@ export default {
   component: GameDetails,
   parameters: {
     backgrounds: {
-      default: 'won-dark'
+      default: 'dragoon-dark'
     }
   },
   args: mockGame,

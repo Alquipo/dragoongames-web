@@ -30,7 +30,7 @@ exports[`<Radio /> should render with label (white) 1`] = `
   appearance: none;
   width: 1.8rem;
   height: 1.8rem;
-  border: 0.2rem solid #F231A5;
+  border: 0.2rem solid #EB46CE;
   border-radius: 50%;
   background: transparent;
   -webkit-transition: background 0.1s ease-in-out;
@@ -40,7 +40,14 @@ exports[`<Radio /> should render with label (white) 1`] = `
 }
 
 .c1:focus {
-  box-shadow: 0 0 0.5rem #F231A5;
+  box-shadow: 0 0 0.5rem #EB46CE;
+}
+
+.c1:hover {
+  border-color: #EB46CE;
+  box-shadow: 0 0 0.5rem #EB46CE;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .c1:before {
@@ -48,7 +55,7 @@ exports[`<Radio /> should render with label (white) 1`] = `
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-  background: #F231A5;
+  background: #EB46CE;
   -webkit-transition: opacity 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out;
   opacity: 0;
@@ -82,4 +89,4 @@ exports[`<Radio /> should render with label (white) 1`] = `
     Radio
   </label>
 </div>
-`
+`;

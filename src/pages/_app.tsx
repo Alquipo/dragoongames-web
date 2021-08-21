@@ -27,7 +27,7 @@ function App({ Component, pageProps }: AppProps) {
           <CartProvider>
             <WishlistProvider>
               <Head>
-                <title>Won Games</title>
+                <title>Dragoon Games</title>
                 <link rel="shortcut icon" href="/img/favicon.png" />
                 <link rel="apple-touch-icon" href="/img/favicon.png" />
                 <link rel="manifest" href="/manifest.json" />

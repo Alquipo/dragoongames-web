@@ -8,7 +8,7 @@ export default {
   component: GameCard,
   parameters: {
     backgrounds: {
-      default: 'won-dark'
+      default: 'dragoon-dark'
     }
   },
   args: {

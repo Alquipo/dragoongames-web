@@ -47,7 +47,7 @@ const Cart = ({
 
         <S.Text>
           <Info size={18} /> Your purchase is protected by a secure connection
-          from the WON platform. By purchasing from our store you agree and
+          from the Dragoon platform. By purchasing from our store you agree and
           agree to our <a href="#">terms of use.</a> After making the purchase
           you are entitled to a refund within a maximum of 30 days, without any
           additional cost, as long as the download of the purchased game has not
