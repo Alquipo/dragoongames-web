@@ -91,7 +91,7 @@ const Footer = () => (
     </S.Content>
 
     <S.Copyright>
-      Dragoon Games {currentYear} © All rights reserved.
+      Dragoon Games Store {currentYear} © All rights reserved.
     </S.Copyright>
   </S.Wrapper>
 )

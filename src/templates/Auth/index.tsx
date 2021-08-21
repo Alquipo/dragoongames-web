@@ -19,12 +19,12 @@ const Auth = ({ title, children }: AuthProps) => (
         src="/img/auth-bg.jpg"
         alt="Dragoon Games Auth Page"
         layout="fill"
-        objectFit="cover"
+        objectFit="inherit"
       />
       <S.BannerContent>
         <Link href="/">
           <a>
-            <Logo id="banner" />
+            <Logo id="banner" size="large" />
           </a>
         </Link>
 
@@ -37,7 +37,7 @@ const Auth = ({ title, children }: AuthProps) => (
         </div>
 
         <S.Footer>
-          Dragoon Games {currentYear} © Todos os Direitos Reservados
+          Dragoon Games Store {currentYear} © Todos os Direitos Reservados
         </S.Footer>
       </S.BannerContent>
     </S.BannerBlock>

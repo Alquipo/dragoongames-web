@@ -93,11 +93,12 @@ export const ContentWrapper = styled.div`
     `}
 
     ${LogoStyles.Wrapper} {
-      margin: 0 auto ${theme.spacings.xxlarge};
+      margin: 0 auto;
     }
 
     ${HeadingStyles.Wrapper} {
       margin-bottom: ${theme.spacings.medium};
+      margin-top: ${theme.spacings.medium};
     }
   `}
 `

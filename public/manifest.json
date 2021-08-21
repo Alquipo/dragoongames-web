@@ -1,6 +1,6 @@
 {
-  "name": "Dragoon Games",
-  "short_name": "Dragoon Games",
+  "name": "Dragoon Games Store",
+  "short_name": "Dragoon Games Store",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -13,9 +13,9 @@
       "sizes": "512x512"
     }
   ],
-  "background_color": "#0d2854",
+  "background_color": "#03071e",
   "description": "The best Game Store in the world!",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#0d2854"
+  "theme_color": "#03071e"
 }
