@@ -1,4 +1,4 @@
-const APP_KEY = 'WONGAMES'
+const APP_KEY = 'DRAGOONGAMES'
 
 export function getStorageItem(key: string) {
   // no Next via Server/Static não tem window

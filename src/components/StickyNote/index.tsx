@@ -8,7 +8,7 @@ export const StickyNote = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 6rem;
     background-color: ${darken(0.05, theme.colors.mainBg)};
     color: ${theme.colors.white};

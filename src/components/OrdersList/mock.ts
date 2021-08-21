@@ -12,8 +12,8 @@ export default [
         id: '1',
         title: 'game',
         downloadLink:
-          'https://wongames.com/game/download/yuYT56Tgh431LkjhNBgdf',
-        img: 'http://localhost:1337/image.jpg',
+          'https://dragoongames.com/game/download/yuYT56Tgh431LkjhNBgdf',
+        img: 'https://source.unsplash.com/collection/4757197/151x170',
         price: '$10.00'
       }
     ]
@@ -31,8 +31,8 @@ export default [
         id: '2',
         title: 'game',
         downloadLink:
-          'https://wongames.com/game/download/yuYT56Tgh431LkjhNBgdf',
-        img: 'http://localhost:1337/image.jpg',
+          'https://dragoongames.com/game/download/yuYT56Tgh431LkjhNBgdf',
+        img: 'https://source.unsplash.com/collection/4757197/151x170',
         price: '$10.00'
       }
     ]

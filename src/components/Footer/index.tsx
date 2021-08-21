@@ -15,7 +15,7 @@ const Footer = () => (
           Contact Us
         </Heading>
 
-        <a href="mailto:sac@wongames.com">sac@wongames.com</a>
+        <a href="mailto:sac@dragoongames.com">sac@dragoongames.com</a>
       </S.Column>
 
       <S.Column aria-labelledby="social-media">
@@ -25,28 +25,35 @@ const Footer = () => (
 
         <nav id="social-media">
           <a
-            href="https://www.instagram.com/won-games"
+            href="https://www.linkedin.com/in/alquiponeto/"
+            target="_blank"
+            rel="noopenner, noreferrer"
+          >
+            Linkdin
+          </a>
+          <a
+            href="https://www.instagram.com/alquiponeto"
             target="_blank"
             rel="noopenner, noreferrer"
           >
             Instagram
           </a>
           <a
-            href="https://www.twitter.com/won-games"
+            href="https://www.twitter.com/alquiponeto"
             target="_blank"
             rel="noopenner, noreferrer"
           >
             Twitter
           </a>
           <a
-            href="https://www.youtube.com/won-games"
+            href="https://www.youtube.com/alquiponeto"
             target="_blank"
             rel="noopenner, noreferrer"
           >
             Youtube
           </a>
           <a
-            href="https://www.facebook.com/won-games"
+            href="https://www.facebook.com/alquiponeto"
             target="_blank"
             rel="noopenner, noreferrer"
           >
@@ -83,7 +90,9 @@ const Footer = () => (
       </S.Column>
     </S.Content>
 
-    <S.Copyright>Won Games {currentYear} © All rights reserved.</S.Copyright>
+    <S.Copyright>
+      Dragoon Games Store {currentYear} © All rights reserved.
+    </S.Copyright>
   </S.Wrapper>
 )
 

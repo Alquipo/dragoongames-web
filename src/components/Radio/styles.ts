@@ -25,6 +25,12 @@ export const Input = styled.input`
       box-shadow: 0 0 0.5rem ${theme.colors.primary};
     }
 
+    &:hover {
+      border-color: ${theme.colors.primary};
+      box-shadow: 0 0 0.5rem ${theme.colors.primary};
+      transition: ${theme.transition.fast};
+    }
+
     &:before {
       content: '';
       width: 0.8rem;

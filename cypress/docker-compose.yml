@@ -2,14 +2,14 @@ version: '3'
 
 services:
   api:
-    container_name: wongames_api
-    image: alquipo/wongames-api:latest
+    container_name: dragoongames_api
+    image: alquipo/dragoongames-api:latest
     environment:
       DATABASE_HOST: db
       DATABASE_PORT: 5432
-      DATABASE_USERNAME: wongames
-      DATABASE_PASSWORD: wongames123
-      DATABASE_NAME: wongames
+      DATABASE_USERNAME: dragoongames
+      DATABASE_PASSWORD: dragoongames123
+      DATABASE_NAME: dragoongames
       STRIPE_PRIVATE_KEY: 'sk_test_51IvljPGJQ5V6PhsJ1Pm6K9EjSW6ZpEF2pIsux2znob08ekCNElJ78mZtr2k93JfrvDr6criIz5zO3QZVLhTVsckO00Ou67uLnF'
     ports:
       - '1337:1337'
@@ -17,7 +17,7 @@ services:
       - db
 
   db:
-    container_name: wongames_db
-    image: alquipo/wongames-database:latest
+    container_name: dragoongames_db
+    image: alquipo/dragoongames-database:latest
     ports:
       - '5432:5432'

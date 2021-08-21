@@ -8,14 +8,14 @@ import theme from 'styles/theme'
 
 export const parameters = {
   backgrounds: {
-    default: 'won-light',
+    default: 'dragoon-light',
     values: [
       {
-        name: 'won-light',
+        name: 'dragoon-light',
         value: theme.colors.white
       },
       {
-        name: 'won-dark',
+        name: 'dragoon-dark',
         value: theme.colors.mainBg
       }
     ]

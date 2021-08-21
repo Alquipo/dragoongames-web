@@ -11,12 +11,12 @@ describe('Forgot Password', () => {
         body: { ok: true }
       })
 
-      expect(res.body.email).to.eq('ci@wongames.com')
+      expect(res.body.email).to.eq('ci@dragoongames.com')
     })
 
     cy.visit('/forgot-password')
 
-    cy.findAllByPlaceholderText(/email/i).type('ci@wongames.com')
+    cy.findAllByPlaceholderText(/email/i).type('ci@dragoongames.com')
     cy.findByRole('button', { name: /send email/i }).click()
 
     // eu espero receber a mensagem de sucesso
@@ -46,7 +46,7 @@ describe('Forgot Password', () => {
 
     cy.visit('/forgot-password')
 
-    cy.findAllByPlaceholderText(/email/i).type('ci@wongames.com')
+    cy.findAllByPlaceholderText(/email/i).type('ci@dragoongames.com')
     cy.findByRole('button', { name: /send email/i }).click()
 
     // eu espero receber a mensagem de sucesso

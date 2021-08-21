@@ -1,4 +1,5 @@
 import { render, screen } from 'utils/test-utils'
+import theme from 'styles/theme'
 
 import Banner from '.'
 
@@ -40,7 +41,7 @@ describe('<Banner />', () => {
     const ribbon = screen.getByText(/My Ribbon/i)
 
     expect(ribbon).toBeInTheDocument()
-    expect(ribbon).toHaveStyle({ backgroundColor: '#3CD3C1' })
+    expect(ribbon).toHaveStyle({ backgroundColor: theme.colors.secondary })
     expect(ribbon).toHaveStyle({
       height: '2.6rem',
       fontSize: '1.2rem'

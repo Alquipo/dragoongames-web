@@ -1,6 +1,6 @@
 {
-  "name": "Won Games",
-  "short_name": "Won Games",
+  "name": "Dragoon Games Store",
+  "short_name": "Dragoon Games Store",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -13,9 +13,9 @@
       "sizes": "512x512"
     }
   ],
-  "background_color": "#06092B",
+  "background_color": "#03071e",
   "description": "The best Game Store in the world!",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#06092B"
+  "theme_color": "#03071e"
 }

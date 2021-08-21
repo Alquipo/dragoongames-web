@@ -18,7 +18,7 @@ jobs:
         run: docker-compose -f ./cypress/docker-compose.yml up -d
 
       - name: Waiting strapi server
-        run: docker run --network container:wongames_api jwilder/dockerize -wait http://localhost:1337/admin -timeout 120s -wait-retry-interval 5s
+        run: docker run --network container:dragoongames_api jwilder/dockerize -wait http://localhost:1337/admin -timeout 120s -wait-retry-interval 5s
 
       - name: Setup Node
         uses: actions/setup-node@v1

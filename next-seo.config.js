@@ -2,9 +2,9 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.wongames.alquipo.dev',
-    site_name: 'Won Games',
-    title: 'Won Games'
+    url: 'https://www.dragoongames.alquipo.dev',
+    site_name: 'Dragoon Games',
+    title: 'Dragoon Games'
   },
   twitter: {
     handle: '@alquiponeto',

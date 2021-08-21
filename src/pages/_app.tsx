@@ -27,7 +27,7 @@ function App({ Component, pageProps }: AppProps) {
           <CartProvider>
             <WishlistProvider>
               <Head>
-                <title>Won Games</title>
+                <title>Dragoon Games</title>
                 <link rel="shortcut icon" href="/img/favicon.png" />
                 <link rel="apple-touch-icon" href="/img/favicon.png" />
                 <link rel="manifest" href="/manifest.json" />
@@ -39,17 +39,17 @@ function App({ Component, pageProps }: AppProps) {
               <DefaultSeo {...SEO} />
               <GlobalStyles />
               <NextNprogress
-                color="#F231A5"
+                color="#CD113B"
                 startPosition={0.3}
                 stopDelayMs={200}
                 height={5}
               />
               <StickyNote>
                 <p>
-                  Esse é um site de estudos! Quer saber mais acesse o{' '}
+                  Esse é um site dedicado para estudos! Quer saber mais acesse o{' '}
                   <a
                     target="_blank"
-                    href="https://github.com/Alquipo/wongames-client"
+                    href="https://github.com/Alquipo/dragoongames-client"
                     rel="noreferrer"
                   >
                     Github

@@ -72,7 +72,7 @@ describe('<GameCard />', () => {
     )
     const ribbon = screen.getByText(/my ribbon/i)
 
-    expect(ribbon).toHaveStyle({ backgroundColor: '#3CD3C1' })
+    expect(ribbon).toHaveStyle({ backgroundColor: theme.colors.secondary })
     expect(ribbon).toHaveStyle({ height: '2.6rem', fontSize: '1.2rem' })
     expect(ribbon).toBeInTheDocument()
   })

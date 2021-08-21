@@ -14,7 +14,7 @@ exports[`<Banner /> should render correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: linear-gradient(180deg,#ff5f5f 0%,#f062c0 50%);
+  background: linear-gradient(180deg,#9d0208 0%,#d00000 50%);
   color: #FAFAFA;
   font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
   border: 0;
@@ -29,11 +29,11 @@ exports[`<Banner /> should render correctly 1`] = `
 }
 
 .c5:focus {
-  box-shadow: 0 0 0 3px #3CD3C1;
+  box-shadow: 0 0 0 3px #faa307;
 }
 
 .c5:hover {
-  background: linear-gradient(180deg,#e35565 0%,#d958a6 50%);
+  background: linear-gradient(180deg,#8c0207 0%,#bf0000 50%);
 }
 
 .c0 {
@@ -67,18 +67,12 @@ exports[`<Banner /> should render correctly 1`] = `
 }
 
 .c4 strong {
-  color: #F231A5;
+  color: #CD113B;
   font-weight: 600;
 }
 
 @media (max-width:1170px) {
-  .c0 .sc-gtsrHT {
-    right: 0;
-  }
 
-  .c0 .sc-gtsrHT::before {
-    display: none;
-  }
 }
 
 @media (min-width:768px) {

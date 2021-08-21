@@ -63,7 +63,7 @@ const GameItem = ({
         <S.PaymentContent>
           <p>{paymentInfo.purchaseDate}</p>
           <S.CardInfo>
-            <span>{paymentInfo.number}</span>
+            <span style={{ marginRight: '0.5rem' }}>{paymentInfo.number}</span>
             {!!paymentInfo.img && !!paymentInfo.flag && (
               <Image
                 src={paymentInfo.img}

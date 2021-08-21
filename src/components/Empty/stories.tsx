@@ -6,7 +6,7 @@ export default {
   component: Empty,
   parameters: {
     backgrounds: {
-      default: 'won-dark'
+      default: 'dragoon-dark'
     }
   }
 } as Meta

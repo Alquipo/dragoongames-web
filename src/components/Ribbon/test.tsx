@@ -14,7 +14,7 @@ describe('<Ribbon />', () => {
     render(<Ribbon>Best Seller</Ribbon>)
 
     expect(screen.getByText(/Best Seller/i)).toHaveStyle({
-      backgroundColor: '#F231A5'
+      backgroundColor: '#CD113B'
     })
   })
 
@@ -22,7 +22,7 @@ describe('<Ribbon />', () => {
     render(<Ribbon color="secondary">Best Seller</Ribbon>)
 
     expect(screen.getByText(/Best Seller/i)).toHaveStyle({
-      backgroundColor: '#3CD3C1'
+      backgroundColor: '#faa307'
     })
   })
 

@@ -17,26 +17,27 @@ const Auth = ({ title, children }: AuthProps) => (
     <S.BannerBlock>
       <Image
         src="/img/auth-bg.jpg"
-        alt="Won Games Auth Page"
+        alt="Dragoon Games Auth Page"
         layout="fill"
-        objectFit="cover"
+        objectFit="inherit"
       />
       <S.BannerContent>
         <Link href="/">
           <a>
-            <Logo id="banner" />
+            <Logo id="banner" size="large" />
           </a>
         </Link>
 
         <div>
           <Heading size="huge">All your favorite games in one place</Heading>
           <S.Subtitle>
-            <strong>WON</strong> is the best and most complete gaming platform.
+            <strong>Dragoon</strong> is the best and most complete gaming
+            platform.
           </S.Subtitle>
         </div>
 
         <S.Footer>
-          Won Games {currentYear} © Todos os Direitos Reservados
+          Dragoon Games Store {currentYear} © Todos os Direitos Reservados
         </S.Footer>
       </S.BannerContent>
     </S.BannerBlock>
