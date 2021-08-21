@@ -1,26 +1,26 @@
 export default [
   {
-    src: '/img/games/cyberpunk-1.jpg',
+    src: 'https://source.unsplash.com/collection/4757197/1042x580',
     label: 'Gallery Image 1'
   },
   {
-    src: '/img/games/cyberpunk-2.jpg',
+    src: 'https://source.unsplash.com/collection/4757197/1042x580',
     label: 'Gallery Image 2'
   },
   {
-    src: '/img/games/cyberpunk-3.jpg',
+    src: 'https://source.unsplash.com/collection/4757197/1042x580',
     label: 'Gallery Image 3'
   },
   {
-    src: '/img/games/cyberpunk-4.jpg',
+    src: 'https://source.unsplash.com/collection/4757197/1042x580',
     label: 'Gallery Image 4'
   },
   {
-    src: '/img/games/cyberpunk-5.jpg',
+    src: 'https://source.unsplash.com/collection/4757197/1042x580',
     label: 'Gallery Image 5'
   },
   {
-    src: '/img/games/cyberpunk-6.jpg',
+    src: 'https://source.unsplash.com/collection/4757197/1042x580',
     label: 'Gallery Image 6'
   }
 ]

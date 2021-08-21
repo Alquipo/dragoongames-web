@@ -13,7 +13,7 @@ export default [
         title: 'game',
         downloadLink:
           'https://dragoongames.com/game/download/yuYT56Tgh431LkjhNBgdf',
-        img: 'http://localhost:1337/image.jpg',
+        img: 'https://source.unsplash.com/collection/4757197/151x170',
         price: '$10.00'
       }
     ]
@@ -32,7 +32,7 @@ export default [
         title: 'game',
         downloadLink:
           'https://dragoongames.com/game/download/yuYT56Tgh431LkjhNBgdf',
-        img: 'http://localhost:1337/image.jpg',
+        img: 'https://source.unsplash.com/collection/4757197/151x170',
         price: '$10.00'
       }
     ]

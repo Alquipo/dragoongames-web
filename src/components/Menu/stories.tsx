@@ -5,7 +5,6 @@ export default {
   title: 'Menu',
   component: Menu,
   parameters: {
-    layout: 'fullscreen',
     backgrounds: {
       default: 'dragoon-dark'
     }

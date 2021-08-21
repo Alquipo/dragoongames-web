@@ -9,7 +9,6 @@ export default {
     items
   },
   parameters: {
-    layout: 'fullscreen',
     backgrounds: {
       default: 'dragoon-dark'
     }

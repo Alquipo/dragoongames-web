@@ -5,7 +5,7 @@ export default {
   title: 'GameItem',
   component: GameItem,
   args: {
-    img: 'https://source.unsplash.com/user/willianjusten/151x70',
+    img: 'https://source.unsplash.com/collection/4757197/151x170',
     title: 'Red Dead Redemption 2',
     price: 'R$ 215,00'
   }

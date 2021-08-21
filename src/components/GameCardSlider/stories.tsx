@@ -9,7 +9,6 @@ export default {
   component: GameCardSlider,
   args: { items },
   parameters: {
-    layout: 'fullscreen',
     backgrounds: {
       default: 'dragoon-dark'
     }
