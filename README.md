@@ -65,19 +65,19 @@ Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alqu
 ### Web
 
 <h4 align="center">
-  <img alt="home" title="home" src=".github/readme/home.png" width="400px" />
-  <img alt="explorer" title="explorer" src=".github/readme/explorer.png" width="400px" />
-  <img alt="profile" title="profile" src=".github/readme/profile.png" width="400px" />
-  <img alt="order" title="order" src=".github/readme/order.png" width="400px" />
+  <img alt="home" title="home" src=".github/readme/home.png" width="400px" height="200" />
+  <img alt="explorer" title="explorer" src=".github/readme/explorer.png" width="400px" height="200" />
+  <img alt="profile" title="profile" src=".github/readme/profile.png" width="400px" height="200" />
+  <img alt="order" title="order" src=".github/readme/order.png" width="400px" height="200" />
 </h4>
 
 ### Mobile (PWA)
 
 <h4 align="center">
-  <img alt="home" title="home" src=".github/readme/home-mobile.png" width="400px" />
-  <img alt="explorer" title="explorer" src=".github/readme/explore-mobile.png" width="400px" />
-  <img alt="profile" title="profile" src=".github/readme/menu-mobile.png" width="400px" />
-  <img alt="order" title="order" src=".github/readme/profile-mobile.png" width="400px" />
+  <img alt="home" title="home" src=".github/readme/home-mobile.png" width="400px" height="600" />
+  <img alt="explorer" title="explorer" src=".github/readme/explore-mobile.png" width="400px" height="600" />
+  <img alt="profile" title="profile" src=".github/readme/menu-mobile.png" width="400px" height="600" />
+  <img alt="order" title="order" src=".github/readme/profile-mobile.png" width="400px" height="600" />
 </h4>
 
 #### Email Template
@@ -89,11 +89,11 @@ Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alqu
 ### Storybook e Test
 
 <h4 align="center">
-  <img alt="Example Test" title="ExampleTest" src=".github/readme/storybook.png" width="400px" />
 
-  <img alt="Test Unitário" title="Test Unitário" src=".github/readme/jest-1.png" width="400px" />
-  <img alt="Test Unitário" title="Test Unitário" src=".github/readme/jest-2.png" width="400px" />
+  <img alt="Test Unitário" title="Test Unitário" src=".github/readme/jest-1.png" width="400px" height="400" />
+  <img alt="Test Unitário" title="Test Unitário" src=".github/readme/jest-2.png" width="400px"  />
   <img alt="Test Integração" title="Test Integração" src=".github/readme/cypress.png" width="400px" />
+  <img alt="Storybook" title="Storybook" src=".github/readme/storybook.png" width="400px" height="250" />
 
 </h4>
 
