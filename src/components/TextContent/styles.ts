@@ -34,8 +34,11 @@ export const Wrapper = styled.div`
     }
 
     a {
-      max-width: min(70rem, 100%);
       color: ${theme.colors.primary};
+    }
+
+    div {
+      max-width: min(70rem, 100%);
     }
 
     img,
