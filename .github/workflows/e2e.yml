@@ -25,7 +25,7 @@ jobs:
       - uses: c-hive/gha-yarn-cache@v1
 
       - name: Create .env
-        run: echo '${{ secrets.ENVTESTING }}' > .env
+        run: echo '${{ secrets.ENVTESTING }}' > .env.local
 
       - name: Install dependencies
         run: yarn install
