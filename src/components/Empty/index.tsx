@@ -14,7 +14,7 @@ const Empty = ({ title, description, hasLink }: EmptyProps) => (
   <S.Wrapper>
     <Image
       src="/img/empty.png"
-      alt="A gamer in a couch playing videogame"
+      alt="A Dragoon class Final Fantasy"
       width={320}
       height={260}
     />

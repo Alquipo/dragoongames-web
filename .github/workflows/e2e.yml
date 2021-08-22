@@ -9,9 +9,8 @@ on:
 jobs:
   end-to-end:
     runs-on: ubuntu-latest
-    env:
-      NODE_ENV: test
     steps:
+      - name: Checkout Repository
       - uses: actions/checkout@v2
 
       - name: Build the stack
@@ -26,6 +25,9 @@ jobs:
           node-version: 14.x
 
       - uses: c-hive/gha-yarn-cache@v1
+
+      - name: Create .env
+        run: echo '${{ secrets.ENVTESTING }}' > .env
 
       - name: Install dependencies
         run: yarn install
