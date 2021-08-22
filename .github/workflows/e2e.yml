@@ -1,5 +1,4 @@
 name: End to End
-# on: [pull_request]
 
 on:
   push:
@@ -10,7 +9,6 @@ jobs:
   end-to-end:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
       - uses: actions/checkout@v2
 
       - name: Build the stack
