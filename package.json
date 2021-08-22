@@ -21,7 +21,7 @@
     "types:generate": "yarn schema:download && yarn schema:convert && yarn codegen",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -c .storybook -s ./public -o .out/storybook",
+    "build-storybook": "build-storybook -s ./public",
     "prepare": "husky install"
   },
   "dependencies": {
