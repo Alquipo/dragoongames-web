@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: 14.x
 
+      - name: Create .env
+        run: echo '${{ secrets.ENVTESTING }}' > .env.local
+
       - name: Install dependencies
         run: yarn install
 
@@ -28,4 +31,3 @@ jobs:
 
       - name: Test
         run: yarn test:ci
-
