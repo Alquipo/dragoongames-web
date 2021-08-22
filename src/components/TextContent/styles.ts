@@ -34,12 +34,13 @@ export const Wrapper = styled.div`
     }
 
     a {
+      max-width: min(70rem, 100%);
       color: ${theme.colors.primary};
     }
 
     img,
     video {
-      max-width: min(50rem, 100%);
+      max-width: min(70rem, 100%);
       margin-bottom: ${theme.spacings.xsmall};
     }
 
