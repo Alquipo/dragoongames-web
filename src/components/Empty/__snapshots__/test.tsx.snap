@@ -73,7 +73,7 @@ exports[`<Empty /> should render correctly 1`] = `
       class="c0"
     >
       <img
-        alt="A gamer in a couch playing videogame"
+        alt="A Dragoon class Final Fantasy"
         height="260"
         src="/img/empty.png"
         width="320"

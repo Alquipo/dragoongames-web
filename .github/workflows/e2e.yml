@@ -22,10 +22,10 @@ jobs:
         with:
           node-version: 14.x
 
-      - uses: c-hive/gha-yarn-cache@v1
-
       - name: Create .env
         run: echo '${{ secrets.ENVTESTING }}' > .env.local
+
+      - uses: c-hive/gha-yarn-cache@v2
 
       - name: Install dependencies
         run: yarn install

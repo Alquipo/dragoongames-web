@@ -4,5 +4,5 @@ import 'jest-styled-components'
 import dotenv from 'dotenv'
 
 dotenv.config({
-  path: '.env.development'
+  path: '.env.example'
 })

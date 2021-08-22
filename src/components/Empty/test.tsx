@@ -13,7 +13,7 @@ describe('<Empty />', () => {
 
     expect(
       screen.getByRole('img', {
-        name: /a gamer in a couch playing videogame/i
+        name: /A Dragoon class Final Fantasy/i
       })
     ).toBeInTheDocument()
 
