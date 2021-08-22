@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && yarn build-storybook",
     "start": "next start",
     "lint": "eslint src --max-warnings=0 --fix",
     "typecheck": "tsc --project tsconfig.json --noEmit",
@@ -21,7 +21,7 @@
     "types:generate": "yarn schema:download && yarn schema:convert && yarn codegen",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public",
+    "build-storybook": "build-storybook -c .storybook -s ./public  -o out/storybook",
     "prepare": "husky install"
   },
   "dependencies": {
