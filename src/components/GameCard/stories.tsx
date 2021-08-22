@@ -4,7 +4,7 @@ import { CartContextData } from 'hooks/use-cart'
 import GameCard, { GameCardProps } from '.'
 
 export default {
-  title: 'GameCard',
+  title: 'Game/GameCard',
   component: GameCard,
   parameters: {
     backgrounds: {

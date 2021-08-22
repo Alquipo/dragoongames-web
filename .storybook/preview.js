@@ -8,7 +8,7 @@ import theme from 'styles/theme'
 
 export const parameters = {
   backgrounds: {
-    default: 'dragoon-light',
+    default: 'dragoon-dark',
     values: [
       {
         name: 'dragoon-light',

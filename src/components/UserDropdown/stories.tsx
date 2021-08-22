@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import UserDropdown, { UserDropdownProps } from '.'
 
 export default {
-  title: 'UserDropdown',
+  title: 'Profile/UserDropdown',
   component: UserDropdown,
   parameters: {
     backgrounds: {

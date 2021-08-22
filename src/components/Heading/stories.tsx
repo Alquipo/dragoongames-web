@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import Heading, { HeadingProps } from '.'
 
 export default {
-  title: 'Heading',
+  title: 'UI/Heading',
   component: Heading,
   argTypes: {
     children: {
@@ -15,5 +15,5 @@ export const Default: Story<HeadingProps> = (args) => <Heading {...args} />
 
 Default.args = {
   children: 'Most Populars',
-  color: 'black'
+  color: 'white'
 }

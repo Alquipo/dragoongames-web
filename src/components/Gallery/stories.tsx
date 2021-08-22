@@ -3,7 +3,7 @@ import Gallery, { GalleryProps } from '.'
 import items from './mock'
 
 export default {
-  title: 'Gallery',
+  title: 'Game/Gallery',
   component: Gallery,
   args: {
     items

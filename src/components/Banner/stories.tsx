@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import Banner, { BannerProps } from '.'
 
 export default {
-  title: 'Banner',
+  title: 'Elements/Banner',
   component: Banner,
   argTypes: {
     ribbon: {

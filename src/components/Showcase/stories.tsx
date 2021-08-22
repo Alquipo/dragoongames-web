@@ -4,7 +4,7 @@ import highlightMock from 'components/Highlight/mock'
 import gamesMock from 'components/GameCardSlider/mock'
 
 export default {
-  title: 'Showcase',
+  title: 'Elements/Showcase',
   component: Showcase,
   decorators: [
     (Story) => (

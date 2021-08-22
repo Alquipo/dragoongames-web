@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import Empty, { EmptyProps } from '.'
 
 export default {
-  title: 'Empty',
+  title: 'UI/Empty',
   component: Empty,
   parameters: {
     backgrounds: {

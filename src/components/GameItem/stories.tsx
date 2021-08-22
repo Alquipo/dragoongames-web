@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import GameItem, { GameItemProps } from '.'
 
 export default {
-  title: 'GameItem',
+  title: 'Game/GameItem',
   component: GameItem,
   args: {
     img: 'https://source.unsplash.com/collection/4757197/151x170',

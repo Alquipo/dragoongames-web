@@ -4,7 +4,7 @@ import ExploreSidebar, { ExploreSidebarProps } from '.'
 import items from './mock'
 
 export default {
-  title: 'ExploreSidebar',
+  title: 'Elements/ExploreSidebar',
   component: ExploreSidebar,
   args: {
     items,
