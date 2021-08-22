@@ -12,7 +12,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   })
 
   const fields = data.games.map(({ slug }) => ({
-    loc: `https://dragoongames.alquipo.dev'/${slug}`,
+    loc: `https://dragoongames.alquipo.dev/${slug}`,
     lastmod: new Date().toISOString()
   }))
 
