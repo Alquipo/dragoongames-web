@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="543.979 372.931 131.057 108.549" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="inner-shadow-filter-0" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="inner-shadow 1 0 0 10 0.5 rgba(0,0,0,0.7)">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="inner-shadow-filter-1" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="inner-shadow 1 0 0 10 0.5 rgba(0,0,0,0.7)">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <style>.aIptOCySncolors-0avscJij0- {fill:#7A63FF;fill-opacity:1;}.aIptOCySncolors-1avscJij0- {fill:#74E0EF;fill-opacity:1;}.aIptOCySncolors-2avscJij0- {fill:white;fill-opacity:1;}.aIptOCySncolors-3avscJij0- {fill:#969696;fill-opacity:1;}.aIptOCySncolors-4avscJij0- {fill:#C1F7FF;fill-opacity:1;}.aIptOCySncolors-5avscJij0- {fill:#EF75FD;fill-opacity:1;}.aIptOCySncolors-6avscJij0- {fill:#555555;fill-opacity:1;}.aIptOCySncolors-7avscJij0- {fill:#B4B4B4;fill-opacity:1;}</style>
+  </defs>
+  <g opacity="1" transform="matrix(1.378415, 0, 0, 1.234967, -244.627655, -103.293594)" style="filter: url(#inner-shadow-filter-0);">
+    <svg width="89.7998" height="85.5294" x="575" y="386.7353" version="1.1" preserveAspectRatio="none" viewBox="5.345006465911865 7.470000267028809 89.30799865722656 85.06099700927734">
+      <g transform="matrix(1 0 0 1 0 0)" class="aIptOCySncolors-0avscJij0-" style="filter: url(#inner-shadow-filter-1);">
+        <polygon points="81.266,44.171 78.943,33.835 73.93,26.008 66.109,19.904 71.602,27.411 75.621,34.441 77.777,44.118 77.172,53.739 73.551,62.142 68.116,69.511 62.075,75.83 69.977,71.066 76.535,63.91 80.523,54.769 " style="paint-order: fill; fill: rgb(205, 17, 59);"/>
+        <polygon points="88.123,25.541 83.181,16.5 77.033,12.205 81.791,17.821 86.076,26.185 87.506,36.987 87.06,48.338 83.734,57.607 77.572,69.247 85.198,59.268 89.329,48.857 89.777,36.93 " style="paint-order: fill; fill: rgb(205, 17, 59);"/>
+        <polygon points="80.307,27.759 83.026,36.068 84.399,46.589 84.723,35.802 82.102,26.492 74.278,16.836 66.424,10.459 56.291,7.47 47.46,7.487 55.691,9.159 65.42,12.679 72.907,18.684 " style="paint-order: fill; fill: rgb(205, 17, 59);"/>
+        <path d="M92.225,30.156l0.309,7.482l-0.699,11.984l-3.306,9.951l-3.806,6.337l-5.275,5.717l-5.515,5.319l2.786-6.291l-10.721,6.464 l-6.618,0.383L62.438,70l-8.413,2.172l3.959-4.86l4.596-9.694l-6.39,1.793l4.322-7.435l2.3-9.143l-5.326,2.24l0.677-4.476 l-0.964-4.641l1.522,0.402l3.13,2.802l-2.242-5.53l-3.512-4.222l-5.044-4.296l-5.156-3.026l-4.744-1.733l-3.824-0.587l4.643-3.33 l4.327-6.644l-5.911,4.48l-4.465,2.121l0.595-2.312l0.096-3.335l-3.688,6.19l-4.599,2.473l-3.857,3.765l-7.346,2.208l-2.208,3.477 l-2.681,1.186l-2.578,0.262l-4.312,2.25l1.181,3.616l3.135,3.231l0.76-4.134l1.298,0.463l0.63-1.565l3.737-1.633l3.573,0.825 l-5.696,3.551l-1.747,2.151l6.622-3.04l-2.406,5.316l-3.688-0.696l0.648,2.547l1.323,1.477l2.967,1.531l2.428-4.15l3.661-3.306 l4.454-1.036l5.082,0.41l3.105,1.107l4.422-1.527l2.354-1.289l-1.771,1.78l-2.619,2.034l-2.276,1.031l0.371,3.328l-1.011,3.465 l6.373-0.349l-3.134,1.375l-3.448,0.842l-2.119,5.262l2.767,0.795l4.497,0.733l-4.852,0.701l-3.322-0.351l-3.559,3.741l3.76,1.875 l4.185,1.212l-4.537,0.215l-5.888-1.522l-6.748,4.272l-1.719,8.294l2.839-2.553l2.432,6.996l5.415,6.84l6.874,4.259l0.133-3.323 l5.598,2.715l7.745,1.915l10.827,0.543l-4.45-3.633l10.782-2.027l8.855-4.315l7.58-7.116l4.941-7.23l3.655-7.116l2.877-10.816 l0.411-12.637l0.001-0.02L92.225,30.156z M20.987,28.78l-2.096,0.893l0.959-2.383l4.64-1.22L20.987,28.78z M37.72,26.297 l-5.159,0.23l1.755-2.659l4.437,0.186l5,1.408l5.743,2.729l6,5.575l-6.506-4.205l-5.748-2.329L37.72,26.297z" style="paint-order: fill; fill: rgb(205, 17, 59);"/>
+      </g>
+    </svg>
+  </g>
+</svg>
