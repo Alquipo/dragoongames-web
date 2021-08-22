@@ -77,7 +77,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   >({ query: QUERY_UPCOMING, variables: { date: TODAY } })
 
   return {
-    revalidate: 60,
+    revalidate: 60 * 60 * 24 * 7, // 1 week
     props: {
       slug: params?.slug,
       cover: `${getImageUrl(game.cover?.src)}`,

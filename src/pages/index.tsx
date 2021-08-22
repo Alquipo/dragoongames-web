@@ -27,7 +27,7 @@ export async function getStaticProps() {
   })
 
   return {
-    revalidate: 10,
+    revalidate: 60 * 60 * 24, // 24h
     props: {
       banners: bannerMapper(banners),
       newGamesTitle: sections?.newGames?.title,
