@@ -6,7 +6,7 @@ import * as HeadingStyles from 'components/Heading/styles'
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     color: ${theme.colors.white};
-    padding: ${theme.spacings.medium};
+    /* padding: ${theme.spacings.medium}; */
 
     ${media.greaterThan('medium')`
       background: ${theme.colors.white};
@@ -37,14 +37,12 @@ export const Wrapper = styled.div`
       color: ${theme.colors.primary};
     }
 
-    div {
-      max-width: min(70rem, 100%);
-    }
-
     img,
+    figure,
     video {
       max-width: min(70rem, 100%);
       margin-bottom: ${theme.spacings.xsmall};
+      width: 100%;
     }
 
     ul,
