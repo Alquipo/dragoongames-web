@@ -1,4 +1,5 @@
 import { render, screen } from 'utils/test-utils'
+import theme from 'styles/theme'
 
 import Heading from '.'
 
@@ -86,8 +87,8 @@ describe('<Heading />', () => {
     )
 
     const heading = screen.getByRole('heading', { name: /lorem ipsum/i })
-    expect(heading).toHaveStyle({ 'border-left': '0.7rem solid #faa307' })
-    expect(heading).toHaveStyleRule('border-bottom', '0.5rem solid #faa307', {
+    expect(heading).toHaveStyle({ 'border-left': '0.7rem solid #FF6347' })
+    expect(heading).toHaveStyleRule('border-bottom', '0.5rem solid #FF6347', {
       modifier: '::after'
     })
   })

@@ -1,4 +1,5 @@
 import { render, screen } from 'utils/test-utils'
+import theme from 'styles/theme'
 
 import Ribbon from '.'
 
@@ -22,7 +23,7 @@ describe('<Ribbon />', () => {
     render(<Ribbon color="secondary">Best Seller</Ribbon>)
 
     expect(screen.getByText(/Best Seller/i)).toHaveStyle({
-      backgroundColor: '#faa307'
+      backgroundColor: theme.colors.secondary
     })
   })
 

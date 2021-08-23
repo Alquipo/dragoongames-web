@@ -71,7 +71,7 @@ exports[`<CartList /> should render the cart list 1`] = `
 .c8 {
   color: #FAFAFA;
   padding: 0.2rem 0.8rem;
-  background-color: #faa307;
+  background-color: #FF6347;
   border-radius: 0.4rem;
   font-size: 1.4rem;
   font-weight: 600;

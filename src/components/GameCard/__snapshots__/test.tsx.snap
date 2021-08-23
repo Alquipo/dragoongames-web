@@ -29,8 +29,12 @@ exports[`<GameCard /> should render correctly 1`] = `
   color: #CD113B;
 }
 
+.c7 > span {
+  white-space: nowrap;
+}
+
 .c7:focus {
-  box-shadow: 0 0 0 3px #faa307;
+  box-shadow: 0 0 0 3px #FF6347;
 }
 
 .c7:hover {
@@ -75,8 +79,12 @@ exports[`<GameCard /> should render correctly 1`] = `
   font-size: 1.2rem;
 }
 
+.c11 > span {
+  white-space: nowrap;
+}
+
 .c11:focus {
-  box-shadow: 0 0 0 3px #faa307;
+  box-shadow: 0 0 0 3px #FF6347;
 }
 
 .c11:hover {
@@ -199,7 +207,7 @@ exports[`<GameCard /> should render correctly 1`] = `
   align-items: center;
   color: #FAFAFA;
   padding: 0 0.8rem;
-  background-color: #faa307;
+  background-color: #FF6347;
   border-radius: 0.4rem;
   margin-right: calc(0.8rem / 2);
 }

@@ -20,17 +20,17 @@ describe('<Form />', () => {
 }
 
 .c0 a {
-  color: #faa307;
+  color: #FF6347;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border-bottom: 0.1rem solid #faa307;
+  border-bottom: 0.1rem solid #FF6347;
   -webkit-transition: color,border,0.1s ease-in-out;
   transition: color,border,0.1s ease-in-out;
 }
 
 .c0 a:hover {
-  color: #ca8304;
-  border-bottom: 0.1rem solid #ca8304;
+  color: #ff3814;
+  border-bottom: 0.1rem solid #ff3814;
 }
 
 <body>

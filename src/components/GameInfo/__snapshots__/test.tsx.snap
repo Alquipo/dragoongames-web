@@ -34,8 +34,12 @@ exports[`<GameInfo /> should render game informations 1`] = `
   padding: 0.8rem 4.8rem;
 }
 
+.c6 > span {
+  white-space: nowrap;
+}
+
 .c6:focus {
-  box-shadow: 0 0 0 3px #faa307;
+  box-shadow: 0 0 0 3px #FF6347;
 }
 
 .c6:hover {
@@ -79,8 +83,12 @@ exports[`<GameInfo /> should render game informations 1`] = `
   color: #CD113B;
 }
 
+.c8 > span {
+  white-space: nowrap;
+}
+
 .c8:focus {
-  box-shadow: 0 0 0 3px #faa307;
+  box-shadow: 0 0 0 3px #FF6347;
 }
 
 .c8:hover {
@@ -129,7 +137,7 @@ exports[`<GameInfo /> should render game informations 1`] = `
   font-weight: 600;
   color: #FAFAFA;
   z-index: 10;
-  background-color: #faa307;
+  background-color: #FF6347;
   font-size: 1.4rem;
   padding: 0 2.4rem;
   height: 3.6rem;
@@ -148,8 +156,8 @@ exports[`<GameInfo /> should render game informations 1`] = `
 }
 
 .c3::before {
-  border-left-color: #986303;
-  border-top-color: #986303;
+  border-left-color: #e02200;
+  border-top-color: #e02200;
 }
 
 .c3::before {
