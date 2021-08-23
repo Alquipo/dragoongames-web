@@ -29,7 +29,7 @@ exports[`<Empty /> should render correctly 1`] = `
 }
 
 .c3:focus {
-  box-shadow: 0 0 0 3px #faa307;
+  box-shadow: 0 0 0 3px #FF6347;
 }
 
 .c3:hover {

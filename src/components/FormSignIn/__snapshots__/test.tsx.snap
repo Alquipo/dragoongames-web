@@ -95,7 +95,7 @@ exports[`<FormSignIn /> should render the form 1`] = `
 }
 
 .c8:focus {
-  box-shadow: 0 0 0 3px #faa307;
+  box-shadow: 0 0 0 3px #FF6347;
 }
 
 .c8:hover {
@@ -117,17 +117,17 @@ exports[`<FormSignIn /> should render the form 1`] = `
 }
 
 .c9 a {
-  color: #faa307;
+  color: #FF6347;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border-bottom: 0.1rem solid #faa307;
+  border-bottom: 0.1rem solid #FF6347;
   -webkit-transition: color,border,0.1s ease-in-out;
   transition: color,border,0.1s ease-in-out;
 }
 
 .c9 a:hover {
-  color: #ca8304;
-  border-bottom: 0.1rem solid #ca8304;
+  color: #ff3814;
+  border-bottom: 0.1rem solid #ff3814;
 }
 
 .c6 {
