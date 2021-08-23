@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-🚧 Dragoon Games Store Web | Em Construção 🚧
+ Dragoon Games Store Web
 </h1>
 
 <p align="center">
@@ -74,10 +74,10 @@ Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alqu
 ### Mobile (PWA)
 
 <h4 align="center">
-  <img alt="home" title="home" src=".github/readme/home-mobile.png" width="400px" height="600" />
-  <img alt="explorer" title="explorer" src=".github/readme/explore-mobile.png" width="400px" height="600" />
-  <img alt="profile" title="profile" src=".github/readme/menu-mobile.png" width="400px" height="600" />
-  <img alt="order" title="order" src=".github/readme/profile-mobile.png" width="400px" height="600" />
+  <img alt="home" title="home" src=".github/readme/home-mobile.png" width="300px" height="500" />
+  <img alt="explorer" title="explorer" src=".github/readme/explore-mobile.png" width="300px" height="500" />
+  <img alt="profile" title="profile" src=".github/readme/menu-mobile.png" width="300px" height="500" />
+  <img alt="order" title="order" src=".github/readme/profile-mobile.png" width="300px" height="500" />
 </h4>
 
 #### Email Template
@@ -101,10 +101,10 @@ Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alqu
 
 ## 🎖️ Milestone
 
-    -Adicionar o campo para efetuar buscas dos jogos
+    -Adicionar o campo para efetuar buscas dos jogos ✔️
     -Criar o App para Mobile com React-Native
     -Concluir os testes
-    -Ajustes no Storybook
+    -Ajustes no Storybook ✔️
 
 ## 🔨 Tecnologias:
 
@@ -125,6 +125,7 @@ Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alqu
 - **[PlopJS](https://plopjs.com/)**
 - **[Polished](https://polished.js.org/)**
 - **[Styled-Icons](https://styled-icons.js.org/)**
+- **[MeiliSearch](https://www.meilisearch.com/)**
 
 ## 🔎 Comandos
 

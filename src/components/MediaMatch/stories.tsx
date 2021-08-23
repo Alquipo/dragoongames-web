@@ -3,7 +3,12 @@ import MediaMatch from '.'
 
 export default {
   title: 'UI/MediaMatch',
-  component: MediaMatch
+  component: MediaMatch,
+  parameters: {
+    backgrounds: {
+      default: 'dragoon-light'
+    }
+  }
 } as Meta
 
 export const Desktop: Story = () => (

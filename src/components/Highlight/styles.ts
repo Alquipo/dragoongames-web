@@ -13,6 +13,7 @@ const wrapperModifiers = {
       text-align: right;
     }
   `,
+
   left: () => css`
     grid-template-areas: 'content floatimage';
     grid-template-columns: 2fr 1.3fr;
@@ -43,7 +44,7 @@ export const Wrapper = styled.section<WrapperProps>`
 
     img {
       position: absolute;
-      object-fit: cover;
+      max-width: 100%;
     }
 
     ${media.greaterThan('medium')`
@@ -93,7 +94,7 @@ export const Title = styled.h2`
     color: ${theme.colors.white};
 
     ${media.greaterThan('medium')`
-      font-size: ${theme.font.sizes.xxlarge};
+    font-size: ${theme.font.sizes.xxlarge};
     `}
   `}
 `
@@ -106,7 +107,7 @@ export const SubTitle = styled.h3`
     margin-bottom: ${theme.spacings.medium};
 
     ${media.greaterThan('medium')`
-      font-size: ${theme.font.sizes.large};
+    font-size: ${theme.font.sizes.large};
     `}
   `}
 `

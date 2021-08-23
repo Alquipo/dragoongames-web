@@ -4,7 +4,7 @@ export default [
     title: 'Population Zero',
     slug: 'population-zero',
     developer: 'Rockstar Games',
-    img: 'https://source.unsplash.com/collection/4757197/301x140',
+    img: 'https://source.unsplash.com/collection/4757197/237x140',
     price: 235,
     promotionalPrice: 215
   },
@@ -13,7 +13,7 @@ export default [
     title: 'Population Zero',
     slug: 'population-zero',
     developer: 'Rockstar Games',
-    img: 'https://source.unsplash.com/collection/4757197/301x140',
+    img: 'https://source.unsplash.com/collection/4757197/237x140',
     price: 235,
     promotionalPrice: 215
   },
@@ -22,7 +22,7 @@ export default [
     title: 'Population Zero',
     slug: 'population-zero',
     developer: 'Rockstar Games',
-    img: 'https://source.unsplash.com/collection/4757197/301x140',
+    img: 'https://source.unsplash.com/collection/4757197/237x140',
     price: 235,
     promotionalPrice: 215
   },
@@ -31,7 +31,7 @@ export default [
     title: 'Population Zero',
     slug: 'population-zero',
     developer: 'Rockstar Games',
-    img: 'https://source.unsplash.com/collection/4757197/301x140',
+    img: 'https://source.unsplash.com/collection/4757197/237x140',
     price: 235,
     promotionalPrice: 215
   },
@@ -40,7 +40,7 @@ export default [
     title: 'Population Zero',
     slug: 'population-zero',
     developer: 'Rockstar Games',
-    img: 'https://source.unsplash.com/collection/4757197/301x140',
+    img: 'https://source.unsplash.com/collection/4757197/237x140',
     price: 235,
     promotionalPrice: 215
   },
@@ -49,7 +49,7 @@ export default [
     title: 'Population Zero',
     slug: 'population-zero',
     developer: 'Rockstar Games',
-    img: 'https://source.unsplash.com/collection/4757197/301x140',
+    img: 'https://source.unsplash.com/collection/4757197/237x140',
     price: 235,
     promotionalPrice: 215
   }

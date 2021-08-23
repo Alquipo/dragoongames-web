@@ -6,11 +6,6 @@ import GameCard, { GameCardProps } from '.'
 export default {
   title: 'Game/GameCard',
   component: GameCard,
-  parameters: {
-    backgrounds: {
-      default: 'dragoon-dark'
-    }
-  },
   args: {
     slug: 'population-zero',
     title: 'Population Zero',
