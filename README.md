@@ -67,7 +67,7 @@ Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alqu
     -Concluir os testes
     -Ajustes no Storybook ✔️
     -Adicionar botão show/hide no input password ✔️
-    -Adicionar tooltip na tela de pagamento com informações do cartão de teste
+    -Adicionar tooltip na tela de pagamento com informações do cartão de teste ✔️
 
 ## 🎨 Layout
 
