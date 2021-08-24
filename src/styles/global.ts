@@ -79,6 +79,13 @@ const GlobalStyles: GlobalStyleComponent<
         background-color: ${theme.colors.mainBg};
       `}
     }
+
+    input {
+      ::-ms-clear,
+      ::-ms-reveal {
+        display: none;
+      }
+    }
   `}
 
 `

@@ -12,7 +12,7 @@ export const parameters = {
     values: [
       {
         name: 'dragoon-light',
-        value: theme.colors.white
+        value: theme.colors.lightBg
       },
       {
         name: 'dragoon-dark',

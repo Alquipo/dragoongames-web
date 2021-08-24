@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-🚧 Dragoon Games Store Web | Em Construção 🚧
+ Dragoon Games Store Web
 </h1>
 
 <p align="center">
@@ -60,6 +60,15 @@ Dragoon Games Store é um e-commerce completo para comprar jogos, nesse reposit�
 
 Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alquipo/dragoongames-api) e [DragoonGameAPI](https://dragoongames.herokuapp.com/admin/)
 
+## 🎖️ Milestone
+
+    -Adicionar o campo para efetuar buscas dos jogos
+    -Criar o App para Mobile com React-Native
+    -Concluir os testes
+    -Ajustes no Storybook ✔️
+    -Adicionar botão show/hide no input password ✔️
+    -Adicionar tooltip na tela de pagamento com informações do cartão de teste ✔️
+
 ## 🎨 Layout
 
 ### Web
@@ -74,10 +83,10 @@ Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alqu
 ### Mobile (PWA)
 
 <h4 align="center">
-  <img alt="home" title="home" src=".github/readme/home-mobile.png" width="400px" height="600" />
-  <img alt="explorer" title="explorer" src=".github/readme/explore-mobile.png" width="400px" height="600" />
-  <img alt="profile" title="profile" src=".github/readme/menu-mobile.png" width="400px" height="600" />
-  <img alt="order" title="order" src=".github/readme/profile-mobile.png" width="400px" height="600" />
+  <img alt="home" title="home" src=".github/readme/home-mobile.png" width="300px" height="500" />
+  <img alt="explorer" title="explorer" src=".github/readme/explore-mobile.png" width="300px" height="500" />
+  <img alt="profile" title="profile" src=".github/readme/menu-mobile.png" width="300px" height="500" />
+  <img alt="order" title="order" src=".github/readme/profile-mobile.png" width="300px" height="500" />
 </h4>
 
 #### Email Template
@@ -99,13 +108,6 @@ Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alqu
 
 <br/>
 
-## 🎖️ Milestone
-
-    -Adicionar o campo para efetuar buscas dos jogos
-    -Criar o App para Mobile com React-Native
-    -Concluir os testes
-    -Ajustes no Storybook
-
 ## 🔨 Tecnologias:
 
 - **[TypeScript](https://www.typescriptlang.org/)**
@@ -125,6 +127,7 @@ Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alqu
 - **[PlopJS](https://plopjs.com/)**
 - **[Polished](https://polished.js.org/)**
 - **[Styled-Icons](https://styled-icons.js.org/)**
+- **[MeiliSearch](https://www.meilisearch.com/)**
 
 ## 🔎 Comandos
 

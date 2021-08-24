@@ -5,7 +5,6 @@ export default {
   title: 'Form/Checkbox',
   component: Checkbox,
   parameters: {
-    layout: 'fullscreen',
     backgrounds: {
       default: 'dragoon-dark'
     }

@@ -14,6 +14,7 @@ import { createPayment, createPaymentIntent } from 'utils/stripe/methods'
 
 import { FormLoading } from 'components/Form'
 import { Session } from 'next-auth'
+import Tooltip from 'components/Tooltip'
 
 type PaymentFormProps = {
   session: Session
@@ -126,17 +127,19 @@ const PaymentForm = ({ session }: PaymentFormProps) => {
           {freeGames ? (
             <S.FreeGames>Only free games, click buy and enjoy!</S.FreeGames>
           ) : (
-            <CardElement
-              options={{
-                hidePostalCode: true,
-                style: {
-                  base: {
-                    fontSize: '16px'
+            <Tooltip text="Use card number: 4242 4242 4242 4242">
+              <CardElement
+                options={{
+                  hidePostalCode: true,
+                  style: {
+                    base: {
+                      fontSize: '16px'
+                    }
                   }
-                }
-              }}
-              onChange={handleChange}
-            />
+                }}
+                onChange={handleChange}
+              />
+            </Tooltip>
           )}
 
           {error && (

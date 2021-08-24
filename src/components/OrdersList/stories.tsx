@@ -6,6 +6,11 @@ import itemsMock from './mock'
 export default {
   title: 'Profile/OrdersList',
   component: OrdersList,
+  parameters: {
+    backgrounds: {
+      default: 'dragoon-light'
+    }
+  },
   args: {
     items: itemsMock
   }

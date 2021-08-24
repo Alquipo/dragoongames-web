@@ -4,6 +4,11 @@ import GameItem, { GameItemProps } from '.'
 export default {
   title: 'Game/GameItem',
   component: GameItem,
+  parameters: {
+    backgrounds: {
+      default: 'dragoon-light'
+    }
+  },
   args: {
     img: 'https://source.unsplash.com/collection/4757197/151x170',
     title: 'Red Dead Redemption 2',
@@ -21,7 +26,7 @@ WithPayment.args = {
   downloadLink: 'https://dragoongames.alquipo.dev/game/download/21312ndasd',
   paymentInfo: {
     flag: 'mastercard',
-    img: '/img/master-card.png',
+    img: '/img/cards/mastercard.png',
     number: '**** **** **** 4326',
     purchaseDate: 'Purchase made on 07/20/2020 at 20:32'
   }

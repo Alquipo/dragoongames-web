@@ -24,6 +24,7 @@ describe('<Ribbon />', () => {
 
     expect(screen.getByText(/Best Seller/i)).toHaveStyle({
       backgroundColor: theme.colors.secondary
+
     })
   })
 

@@ -10,14 +10,11 @@ export default {
     }
   },
   args: {
-    img: 'https://source.unsplash.com/collection/4757197/1042x580',
+    img: 'https://source.unsplash.com/collection/4757197/1040x580',
     title: 'Defy death',
     subtitle: '<p>Play the new <strong>CrashLands</strong> season',
     buttonLabel: 'Buy now',
     buttonLink: '/games/defy-death'
-  },
-  parameters: {
-    layout: 'fullscreen'
   }
 } as Meta
 
