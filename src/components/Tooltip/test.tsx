@@ -4,6 +4,7 @@ import Tooltip from '.'
 
 describe('<Tooltip />', () => {
   it('should render the heading', () => {
+
     const { container } = render(<Tooltip text="Test">Test</Tooltip>)
 
     expect(container.firstChild).toMatchInlineSnapshot(`
@@ -83,5 +84,6 @@ describe('<Tooltip />', () => {
   Test
 </div>
 `)
+
   })
 })
