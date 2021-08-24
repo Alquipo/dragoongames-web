@@ -101,10 +101,12 @@ Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alqu
 
 ## 🎖️ Milestone
 
-    -Adicionar o campo para efetuar buscas dos jogos ✔️
+    -Adicionar o campo para efetuar buscas dos jogos 
     -Criar o App para Mobile com React-Native
     -Concluir os testes
     -Ajustes no Storybook ✔️
+    -Adicionar botão show/hide no input password
+    -Adicionar tooltip na tela de pagamento com informações do cartão de teste
 
 ## 🔨 Tecnologias:
 
