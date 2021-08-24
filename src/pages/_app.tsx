@@ -49,10 +49,18 @@ function App({ Component, pageProps }: AppProps) {
                   Esse é um site dedicado para estudos! Quer saber mais acesse o{' '}
                   <a
                     target="_blank"
-                    href="https://github.com/Alquipo/dragoongames-client"
+                    href="https://github.com/Alquipo/dragoongames-web"
                     rel="noreferrer"
                   >
                     Github
+                  </a>{' '}
+                  &{' '}
+                  <a
+                    target="_blank"
+                    href="https://dragoongames-storybook.alquipo.dev/?path=/story/elements-banner--default&globals=measureEnabled:false"
+                    rel="noreferrer"
+                  >
+                    Storybook
                   </a>
                 </p>
               </StickyNote>
