@@ -9,6 +9,13 @@ useRouter.mockImplementation(() => ({
   query: {}
 }))
 
+jest.mock('components/Search', () => ({
+  __esModule: true,
+  default: function Mock() {
+    return <div data-testid="Mock Search" />
+  }
+}))
+
 describe('<Menu />', () => {
   it('should render the menu', () => {
     render(<Menu />)
@@ -17,7 +24,7 @@ describe('<Menu />', () => {
     expect(
       screen.getByRole('img', { name: /dragoon games/i })
     ).toBeInTheDocument()
-    expect(screen.getByLabelText(/search/i)).toBeInTheDocument()
+    expect(screen.getByTestId(/mock search/i)).toBeInTheDocument()
     expect(screen.getAllByLabelText(/shopping cart/i)).toHaveLength(2)
   })
 

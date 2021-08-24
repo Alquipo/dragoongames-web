@@ -1,4 +1,5 @@
 import { render, screen } from 'utils/test-utils'
+import theme from 'styles/theme'
 
 import Heading from '.'
 
