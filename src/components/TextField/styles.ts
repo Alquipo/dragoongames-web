@@ -19,6 +19,13 @@ export const InputWrapper = styled.div`
     &:focus-within {
       box-shadow: 0 0 0.5rem ${theme.colors.primary};
     }
+
+    button {
+      width: 3.5rem;
+      border: 0;
+      cursor: pointer;
+      color: ${theme.colors.secondary};
+    }
   `}
 `
 
