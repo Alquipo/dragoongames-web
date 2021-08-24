@@ -54,7 +54,7 @@ exports[`<Highlight /> should render headings and button 1`] = `
 
 .c0 img {
   position: absolute;
-  object-fit: cover;
+  max-width: 100%;
 }
 
 .c0 .c1 {
@@ -109,7 +109,6 @@ exports[`<Highlight /> should render headings and button 1`] = `
 
 <section
   class="c0"
-  data-cy="highlight"
 >
   <img
     alt="Heading 1 background"

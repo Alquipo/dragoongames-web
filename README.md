@@ -60,6 +60,15 @@ Dragoon Games Store é um e-commerce completo para comprar jogos, nesse reposit�
 
 Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alquipo/dragoongames-api) e [DragoonGameAPI](https://dragoongames.herokuapp.com/admin/)
 
+## 🎖️ Milestone
+
+    -Adicionar o campo para efetuar buscas dos jogos 
+    -Criar o App para Mobile com React-Native
+    -Concluir os testes
+    -Ajustes no Storybook ✔️
+    -Adicionar botão show/hide no input password
+    -Adicionar tooltip na tela de pagamento com informações do cartão de teste
+    
 ## 🎨 Layout
 
 ### Web
@@ -99,12 +108,6 @@ Para ver a API desenvolvida com Strapi acesse o [Github](https://github.com/Alqu
 
 <br/>
 
-## 🎖️ Milestone
-
-    -Adicionar o campo para efetuar buscas dos jogos ✔️
-    -Criar o App para Mobile com React-Native
-    -Concluir os testes
-    -Ajustes no Storybook ✔️
 
 ## 🔨 Tecnologias:
 

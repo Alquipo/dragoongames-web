@@ -44,7 +44,6 @@ const Cart = ({
             <PaymentForm session={session} />
           </Elements>
         </S.Content>
-
         <S.Text>
           <Info size={18} /> Your purchase is protected by a secure connection
           from the Dragoon platform. By purchasing from our store you agree and
