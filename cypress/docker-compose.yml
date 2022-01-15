@@ -1,6 +1,28 @@
 version: '3'
 
 services:
+  db:
+    container_name: dragoongames_db
+    image: alquipo/dragoongames-database:latest
+    ports:
+      - '5432:5432'
+
+  meilisearch:
+    container_name: dragoongames_meilisearch
+    image: getmeili/meilisearch
+    environment:
+      - MEILI_MASTER_KEY=masterKey
+      - MEILI_INDEX_NAME=game
+    ports:
+      - '7700:7700'
+
+  maildev:
+    container_name: dragoongames_maildev
+    image: maildev/maildev
+    ports:
+      - '1080:80'
+      - '1025:25'
+
   api:
     container_name: dragoongames_api
     image: alquipo/dragoongames-api:latest
@@ -14,10 +36,15 @@ services:
     ports:
       - '1337:1337'
     depends_on:
-      - db
-
-  db:
-    container_name: dragoongames_db
-    image: alquipo/dragoongames-database:latest
-    ports:
-      - '5432:5432'
+      db:
+        condition: service_started
+      meilisearch:
+        condition: service_started
+      maildev:
+        condition: service_started
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 5
+        window: 120s
